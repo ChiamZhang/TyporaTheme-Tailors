@@ -23,7 +23,7 @@ typora-copy-images-to: ../../media/theme/tailors
 4. 持续更新，有问题在issue中提，我看到有时间就会修复。
 5. tailors表示，我是东拼拼西凑凑组成的这个Theme，有些惭愧。
 
-![alt text](https://github.com/ChiamZhang/TyporaTheme-Tailors/blob/main/Typora-Theme-Tailors%20%E4%B8%AD%E6%96%87%E4%BB%8B%E7%BB%8D.png)
+![alt text](https://chiamzhang.github.io/img/Introduction.png)
 
 # 标题样式
 
