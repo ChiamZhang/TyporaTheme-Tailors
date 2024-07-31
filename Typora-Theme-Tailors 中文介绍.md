@@ -2,6 +2,13 @@
 title: Tailors
 author: ChiamZhang
 description: Typora-Theme-Tailors 的介绍文件
+layout: theme
+category: theme
+homepage: https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html
+download: https://github.com/ChiamZhang/TyporaTheme-Tailors
+thumbnail: https://chiamzhang.github.io/img/Introduction.png
+typora-root-url: ../../
+typora-copy-images-to: ../../media/theme/tailors
 ---
 
 # Typora-Theme-Tailors 介绍
