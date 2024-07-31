@@ -17,6 +17,8 @@ This theme is inspired by my two favorite themes:
 4. Continuous updates, if there are any issues, please raise them in the issue section, and I will fix them when I have time.
 5. Tailors means that I have patched together this theme from various sources, feeling a bit embarrassed.
 
+![alt text](https://github.com/ChiamZhang/TyporaTheme-Tailors/blob/main/Typora-Theme-Tailors%20%E4%B8%AD%E6%96%87%E4%BB%8B%E7%BB%8D.png)
+
 # Title Styles
 
 ---
