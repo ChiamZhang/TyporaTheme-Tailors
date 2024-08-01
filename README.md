@@ -1,21 +1,22 @@
 ---
-
-title: Tailors
-author: ChiamZhang
-description: Introduction file of Typora-Theme-Tailors
 layout: theme
+title: Tailors
 category: theme
 homepage: https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html
 download: https://github.com/ChiamZhang/TyporaTheme-Tailors
-thumbnail: https://chiamzhang.github.io/img/Introduction.png
+author: ChiamZhang
+thumbnail: tailors.png
 typora-root-url: ../../
-typora-copy-images-to: ../../media/theme/tailors
 ---
 
 # Typora-Theme-Tailors  Introduction
 
-## Introduction
 
+
+## [HomePage](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html)
+## [DownLoad](https://github.com/ChiamZhang/TyporaTheme-Tailors)
+
+## Introduction
 This theme is inspired by my two favorite themes:
 
 1. Phycat by XuJilong. Homepage: [GitHub - sumruler/typora-theme-phycat: Phycat Typora Theme](https://github.com/sumruler/typora-theme-phycat) **Mainly referencing the title part**.
@@ -24,7 +25,17 @@ This theme is inspired by my two favorite themes:
 4. Continuous updates, if there are any issues, please raise them in the issue section, and I will fix them when I have time.
 5. Tailors means that I have patched together this theme from various sources, feeling a bit embarrassed.
 
+## Usage
+Unzip the package and copy 
+1. `tailors.css`
+2. `tailors` folder
+
+to the Typora Theme folder.
+
 ![alt text](https://chiamzhang.github.io/img/Introduction.png)
+
+
+
 
 # Title Styles
 
