@@ -9,7 +9,7 @@ thumbnail: tailors.png
 typora-root-url: ../../
 ---
 
-# Typora-Theme-Tailors  Introduction
+# Typora-Theme-Tailors  Introduction  [中文版](https://github.com/ChiamZhang/TyporaTheme-Tailors/blob/main/Typora-Theme-Tailors%20%E4%B8%AD%E6%96%87%E4%BB%8B%E7%BB%8D.md)
 
 
 
@@ -33,6 +33,10 @@ Unzip the package and copy
 to the Typora Theme folder.
 
 ![alt text](https://chiamzhang.github.io/img/Introduction.png)
+
+## Additional
+
+Personalization can be done by changing the parameters in the Root Module
 
 
 

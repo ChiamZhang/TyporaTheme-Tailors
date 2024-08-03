@@ -40,6 +40,10 @@
   --h5-r-color: rgba(200, 53, 253, 0.555);
   --h6-r-color: rgba(68, 0, 255, 0.507);
 
+  /* 对于16:9的屏幕刚好占满半屏，可以按照心情自己修改 */ 
+  /* 对于9:16的竖屏模式，也很适配 */
+  --max-width:980px;
+
 }
 
 
@@ -184,7 +188,7 @@ body content {
   }
 }
 body #write {
-  max-width: 900px;
+  max-width: var(--max-width);
   min-width: 400px;
   line-height: 2;
   background: linear-gradient(145deg, #fff 0%, #F9FCFF 5%, #f2f2f3 35%, #f0eafb 75%, #e0e3e6);
@@ -278,7 +282,7 @@ h6:after {
 }
 #write h4 {
   margin: 20px 0;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   text-align: left;
 }
 
@@ -300,7 +304,7 @@ h6:after {
 
 #write h5 {
   margin: 23px 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: left;
 }
 #write h5 span:hover {
@@ -321,7 +325,7 @@ h6:after {
 
 #write h6 {
   margin: 23px 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: left;
 }
 
@@ -1305,7 +1309,7 @@ pre.md-fences .cm-s-inner .cm-string {
 }
 pre.md-fences .cm-s-inner .cm-comment,
 pre.md-fences .cm-s-inner.cm-comment {
-  color: #DA924A;
+  color: #cccccc;
 }
 pre.md-fences .cm-s-inner .cm-header,
 pre.md-fences .cm-s-inner .cm-def,
@@ -1350,7 +1354,7 @@ pre.md-fences .cm-s-inner .cm-number {
   color: #1694b6 !important;
 }
 pre.md-fences .cm-s-inner .cm-variable {
-  color: #b92121 !important;
+  color: #512d55f5 !important;
 }
 pre.md-fences .cm-s-inner .cm-variable-2 {
   color: #7aadad !important;
