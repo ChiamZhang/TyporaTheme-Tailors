@@ -1,4 +1,29 @@
 :root {
+
+  --monospace: "Fira Code", "menlo", "KhaiTi", STKaiti, Kaiti, monospace;
+  --mermaid-font-family: "Old Standard TT", Didot, "Modern No. 20", "KhaiTi", STKaiti, Kaiti, sans-serif;
+
+
+  /* 标题后图标样式 */
+  --h1-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(235, 131, 131, 0.4)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.8 29.714v0c-1.371 0-2.514-1.143-2.514-2.514v0c0-1.371 1.143-2.514 2.514-2.514v0c1.371 0 2.514 1.143 2.514 2.514v0c0.114 1.371-1.029 2.514-2.514 2.514z'/></svg>")
+    no-repeat center;
+  --h2-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(174, 154, 203, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>")
+    no-repeat center;
+  --h3-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(0, 170, 255, 0.875)' height='28' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>")
+    no-repeat center;
+  --h4-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 0, 157, 0.532)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 22.857c1.257 0 2.286-1.029 2.286-2.286s-1.029-2.286-2.286-2.286-2.286 1.029-2.286 2.286 1.029 2.286 2.286 2.286z'/></svg>")
+    no-repeat center;
+  --h5-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(200, 53, 253, 0.555)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 22.857c1.257 0 2.286-1.029 2.286-2.286s-1.029-2.286-2.286-2.286-2.286 1.029-2.286 2.286 1.029 2.286 2.286 2.286zM4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 11.429c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>")
+    no-repeat center;
+  --h6-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(68, 0, 255, 0.507)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 11.429c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 16c1.257 0 2.286-1.029 2.286-2.286s-1.029-2.286-2.286-2.286-2.286 1.029-2.286 2.286 1.029 2.286 2.286 2.286z'/></svg>")
+    no-repeat center;
+  
+  
+  
+  /* 主题颜色 */
+
+  --head-title-color: #ffc000; /* 标题主色 */
+  --head-title-h2-background: linear-gradient(to right, #f7ce68, #fbabfe); /* 二级标题主色，因为二级标题是背景色的，所以单独设置 */
   --text-color: #0F1A3A;
   --bg-color: #F9FCFF;
   --item-hover-bg-color: #EEE6CF;
@@ -6,42 +31,21 @@
   --select-text-bg-color: #084E6A;
   --select-text-font-color: #FCF1E5;
   --rawblock-edit-panel-bd: rgba(249, 252, 255, 0.6);
-  --monospace: "Fira Code", "menlo", "KhaiTi", STKaiti, Kaiti, monospace;
-  --mermaid-font-family: "Old Standard TT", Didot, "Modern No. 20", "KhaiTi", STKaiti, Kaiti, sans-serif;
-    /* 标题后小图标，借鉴自思源笔记主题——Savor */
-  --h1-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(235, 131, 131, 0.4)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.8 29.714v0c-1.371 0-2.514-1.143-2.514-2.514v0c0-1.371 1.143-2.514 2.514-2.514v0c1.371 0 2.514 1.143 2.514 2.514v0c0.114 1.371-1.029 2.514-2.514 2.514z'/></svg>")
-    no-repeat center;
-  --h2-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(174, 154, 203, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>")
-    no-repeat center;
-  --h3-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(125, 181, 205, 0.5)' height='28' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>")
-    no-repeat center;
-  --h4-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(113, 167, 150, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 22.857c1.257 0 2.286-1.029 2.286-2.286s-1.029-2.286-2.286-2.286-2.286 1.029-2.286 2.286 1.029 2.286 2.286 2.286z'/></svg>")
-    no-repeat center;
-  --h5-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(220, 191, 97, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 22.857c1.257 0 2.286-1.029 2.286-2.286s-1.029-2.286-2.286-2.286-2.286 1.029-2.286 2.286 1.029 2.286 2.286 2.286zM4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 11.429c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>")
-    no-repeat center;
-  --h6-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(221, 163, 106, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 11.429c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 16c1.257 0 2.286-1.029 2.286-2.286s-1.029-2.286-2.286-2.286-2.286 1.029-2.286 2.286 1.029 2.286 2.286 2.286z'/></svg>")
-    no-repeat center;
 
-  /* 主题颜色 */
 
-  --head-title-color: #ffc000; /* 标题主色 */
-  --head-title-h2-background: linear-gradient(to right, #f7ce68, #fbabfe); /* 二级标题主色，因为二级标题是背景色的，所以单独设置 */
 
-  --element-color: #FB9500; /* 元素主色 */
-  --element-color-deep: #FB9500; /* 元素深色 */
-  --element-color-shallow: #fbcf4b; /* 元素浅色 */
-  --element-color-so-shallow: #fb970069; /* 元素很浅色 */
-  --element-color-soo-shallow: #fffaf4; /* 元素非常浅色 */
+  /* 定义标题的样式颜色，需r-graphic同步为宜 */
+  --h3-r-color: rgba(0, 170, 255, 0.875);
+  --h4-r-color: rgba(255, 0, 157, 0.532);
+  --h5-r-color: rgba(200, 53, 253, 0.555);
+  --h6-r-color: rgba(68, 0, 255, 0.507);
 
-  --element-color-linecode: #dc3545; /* 行内代码文字色 */
-  --element-color-linecode-background: #ffe7e7; /* 行内代码背景色 */
-
-  /* 程序本体UI */
-
-  --appui-color: #546f99; /* 程序UI主题色 */
-  --appui-color-icon: #374966; /* 程序UI图标颜色 */
-  --appui-color-text: #374966; /* 程序UI文字色 */
 }
+
+
+ 
+
+
 @font-face {
   font-family: 'FZJZFS';
   src: url('tailors/FZJZFS.woff2') format('woff');
@@ -133,6 +137,8 @@
   font-weight: 400;
   font-style: italic;
 }
+
+
 html,
 body,
 #write {
@@ -258,7 +264,7 @@ h6:after {
   font-size: 1.3rem;
   text-align: left;
   padding-left: 10px;
-  border-left: 5px solid rgba(125, 181, 205, 0.5);
+  border-left: 5px solid  var(--h3-r-color);
 }
 
 /* 三级标题内容 */
@@ -267,7 +273,7 @@ h6:after {
 }
 
 #write h3 span:hover {
-  border-bottom: 2px solid var(--head-title-color);
+  border-bottom: 2px solid  var(--h3-r-color);
   transition: all linear 0.1s;
 }
 #write h4 {
@@ -280,12 +286,16 @@ h6:after {
   content: "";
   margin-right: 7px;
   display: inline-block;
-  background-color:  rgba(125, 180, 205, 0.5);
+  background-color:  var(--h4-r-color);
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  border: rgba(125, 180, 205, 0.5) 1px solid;
+  border:  var(--h4-r-color) 1px solid;
   vertical-align: inherit;
+}
+#write h4 span:hover {
+  border-bottom: 1.8px solid  var(--h4-r-color);
+  transition: all linear 0.1s;
 }
 
 #write h5 {
@@ -293,7 +303,10 @@ h6:after {
   font-size: 1.1rem;
   text-align: left;
 }
-
+#write h5 span:hover {
+  border-bottom: 1.6px solid  var(--h5-r-color);
+  transition: all linear 0.1s;
+}
 #write h5::before {
   content: "";
   margin-right: 7px;
@@ -302,7 +315,7 @@ h6:after {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  border: rgba(220, 191, 97, 0.5) 2px solid;
+  border:  var(--h5-r-color) 2px solid;
   vertical-align: inherit;
 }
 
@@ -313,12 +326,20 @@ h6:after {
 }
 
 #write h6::before {
-  content: "-";
-  color: rgba(221, 163, 106, 0.5);
+  content: "| ";
+  color:  var(--h6-r-color);
   margin-right: 7px;
   display: inline-block;
   vertical-align: inherit;
 }
+#write h6 span:hover {
+  border-bottom: 1.4px solid  var(--h6-r-color);
+  transition: all linear 0.1s;
+}
+
+
+
+
 
 body #write strong{
   body #write em {
