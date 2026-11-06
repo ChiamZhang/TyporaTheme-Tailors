@@ -5,10 +5,19 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors">🏠 项目主页 (GitHub)</a> •
   <a href="README.md">🌐 English Documentation</a> •
   <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip">⬇️ 下载最新主题包 (ZIP)</a> •
   <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/issues">💬 提交 Issue</a>
 </p>
+
+---
+
+## 🔗 快速链接
+
+- **项目主页**: [https://github.com/ChiamZhang/TyporaTheme-Tailors](https://github.com/ChiamZhang/TyporaTheme-Tailors)
+- **主题包下载**: [TyporaTheme-Tailors.zip](https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip)
+- **英文文档 (English)**: [README.md](README.md)
 
 ---
 
