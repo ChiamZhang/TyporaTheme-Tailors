@@ -209,6 +209,9 @@ content {
   text-align: left;
   background: transparent !important;
   background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 /* 宽屏自动伸展至 1024px（完全对齐 GitHub / Night 等官方主题标准规范） */
