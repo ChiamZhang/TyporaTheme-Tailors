@@ -1,138 +1,297 @@
-# Typora-Theme-Tailors 官方中文介绍
+# Typora-Theme-Tailors 官方中文全景特性展示
 
 <p align="center">
-  <b>日落天色渐变 × 新拟态立体光影 2.0 × 全幅温润淡冰蓝 × 出版级 A4 跨页导出</b>
+  <b>日落暮光天色渐变 × 新拟态 2.0 柔和立体光影 × 全幅温润淡冰蓝 × 出版级 A4 跨页排版</b>
 </p>
 
 <p align="center">
   <a href="https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html">🌐 在线效果预览 (Live Preview)</a> •
   <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors">🏠 项目主页 (GitHub)</a> •
   <a href="README.md">🌐 English Documentation</a> •
-  <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip">⬇️ 下载最新主题包 (ZIP)</a> •
-  <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/issues">💬 提交 Issue</a>
+  <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip">⬇️ 下载主题包 (ZIP)</a> •
+  <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/issues">💬 反馈与建议</a>
 </p>
 
 ---
 
 ## 🔗 快速链接
 
-- **在线效果预览 (Live Preview)**: [https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html)
-- **项目主页**: [https://github.com/ChiamZhang/TyporaTheme-Tailors](https://github.com/ChiamZhang/TyporaTheme-Tailors)
-- **主题包下载**: [TyporaTheme-Tailors.zip](https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip)
-- **英文文档 (English)**: [README.md](README.md)
+- **🌐 在线实时效果预览**: [https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html)
+- **⭐ GitHub 代码仓库**: [https://github.com/ChiamZhang/TyporaTheme-Tailors](https://github.com/ChiamZhang/TyporaTheme-Tailors)
+- **⬇️ 主题包一键下载**: [TyporaTheme-Tailors.zip](https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip)
+- **📄 英文介绍文档**: [README.md](README.md)
 
 ---
 
-## 📖 主题简介
+## 📖 主题设计哲学
 
-**Tailors** 是一款专为 Typora 深度写作与出版打造的高级主题。它融合了 **Phycat（物理猫）** 的经典日落渐变神髓与 **Typora-Theme-Neumorphism** 的新拟态 2.0 柔和立体光影，并在色彩工学、阅读字阶与 PDF 分页算法上进行了全方位的现代工程重构。
+**Tailors** 是一款融合了 **Phycat（物理猫）** 日落暮光渐变神髓与 **Typora-Theme-Neumorphism** 新拟态立体光影的 Typora 顶级主题。
 
-- **温润淡冰蓝**：全幅统一 `#F9FCFF`，告别刺眼纯白反光；
-- **新拟态光影 2.0**：行内代码深邃凹槽、`<var>` 凸起浮雕胶囊、3D 复选框与装饰气泡；
-- **出版级 A4 导出**：正文默认小四号（12pt / 16px），彻底消除跨页大面积空白断层。
-
----
-
-## 🎨 视觉效果展示 (Visual Showcase)
-
-### 1. 日落天色标题体系与点阵图案 (H1 ~ H6)
-- **H1 居中大标题**：底部配有专属日落渐变强调指示线；
-- **H2 标志性日落渐变胶囊**：经典 `linear-gradient(135deg, #f7ce68, #fbabfe)` 药丸徽标与微凸起质感；
-- **H3 ~ H6 日落天色进阶色彩标示与灵动点阵图案**：
-  - **H3 珊瑚暖橘 (`#ea580c`)**：左侧精致高亮边框与 3 阶暖橘点阵；
-  - **H4 暮色玫红 (`#f43f5e`)**：8px 实心微光圆点徽标与 4 阶玫红点阵；
-  - **H5 暮光罗兰 (`#8b5cf6`)**：8px 精致空心环圈标示与 5 阶罗兰紫点阵；
-  - **H6 深邃天青 (`#0284c7`)**：8px 极简等宽短横杠与 6 阶深天青点阵。
-
-![日落天色渐变与色彩标题体系](media/showcase-headings.png)
+- **全幅温润淡冰蓝**：全窗口与导出画布统一采用 `#F9FCFF`，彻底消除刺眼纯白反光；
+- **纯净无界平铺画布**：编辑页面与背景无缝融合，不设突兀卡片边框与沉重灰影，让写作沉浸自然；
+- **新拟态 2.0 柔光立体微交互**：行内代码深邃凹槽、`<var>` 凸起浮雕胶囊、3D 触感复选框；
+- **出版级 A4 导出**：正文默认小四号（12pt / 16px），从算法层彻底消除跨页大面积空白断层。
 
 ---
 
-### 2. 精致 macOS 拟物代码块 (Code Fences)
-- 代码块顶部内置经典 **macOS 红黄绿三色拟物圆点徽标**；
-- 柔和新拟物外层投影搭配高对比度语法高亮，长久阅读依然舒适清晰。
+## 📑 目录结构展示
 
-![macOS 拟物代码块展示](media/showcase-code.png)
+[TOC]
 
 ---
 
-### 3. 内联文本排版与 `<var>` 拟物胶囊
-- **`<var>` 微拟物胶囊**：经典触感凸起浮雕药丸，悬停顺滑转为内凹凹槽；
-- **行内代码 `code`**：深邃暗夜微凹槽（`#101c3e` 底色 + 浅紫文字），辨识度极高；
-- **清新荧光下划线 (`<u>`)**：晴空蓝高亮离底 3.5px，去除沉闷纯黑下划线。
+# 1. 标题视觉系统展示
 
-![内联样式展示](media/showcase-inline.png)
+Tailors 采用专门调校的 **Sunset Twilight（日落暮光）** 渐变与色阶系统，所有标题均配置了清晰的等宽几何标识与专属渐变质感：
 
----
+## 1.1 二级标题胶囊
 
-### 4. 引用块与日落渐变表格
-- **新拟态引用块**：双重拟物阴影浮雕卡片，悬停转为柔和内凹；右下角重现标志性双圆气泡（经优化尺寸为 1.8rem/1rem，鼠标悬停泛出日落金光，且彻底杜绝遮挡文字）；
-- **日落渐变表格**：日落渐变表头、圆角卡片底托与交替浅色斑马纹。
+二级标题采用标志性日落渐变胶囊 `linear-gradient(135deg, #f7ce68, #fbabfe)` 搭配立体柔光阴影，是章节分割的核心视觉标杆。
 
-![表格与引用块展示](media/showcase-table.png)
+### 1.1.1 珊瑚暮橙三级标题 (`◆`)
 
----
+三级标题采用暖意珊瑚日落橙色 (`#ea580c`)，以优雅的菱形图标 `◆` 开启小节，并在标题末尾附带暖调几何渐变图案。
 
-### 5. 交互式 3D 任务列表 (Task Lists)
-- **未勾选态**：3D 凸起微按钮，带有自然双层光影；
-- **已勾选态**：下沉为深邃内凹凹槽，内部呈现利落居中的白色对勾与柔和划线。
+#### 1.1.1.1 暮光玫瑰四级标题 (`■`)
 
-![交互式任务列表展示](media/showcase-tasks.png)
+四级标题过渡至暮光玫瑰粉红 (`#f43f5e`)，搭配稳重方块图标 `■` 与 4 粒玫瑰光斑点阵。
 
----
+##### 1.1.1.1.1 鸢尾罗兰五级标题 (`▲`)
 
-## ✨ 核心特性与工程升级
+五级标题采用尊贵鸢尾紫罗兰 (`#8b5cf6`)，搭配灵动三角图标 `▲` 与 5 粒暮光紫光斑。
 
-1. 🎨 **全幅一体化温润底色**：
-   - 彻底去除白卡片突兀边缘，屏幕阅读与 PDF 导出均覆盖 `#F9FCFF` 温润淡冰蓝。
-2. 📐 **对齐 Typora 官方标准排版宽度**：
-   - 默认标准 `860px` 舒适阅览宽度；超宽屏自适应扩展至 `1024px` 与 `1200px`。
-3. 🖨️ **出版级 PDF / 打印跨页导出优化**：
-   - 导出正文默认标准小四号字体（12pt / 16px），行高 1.65；
-   - 彻底修复了旧版因 fixed 图层与 `min-height: 100%` 导致的第二页大面积顶部空白问题；
-   - 导出态自动剥离所有拟物投影，打印墨粉清晰，线条精简干练。
-4. 🔤 **古典正字字系全包离线嵌入**：
-   - 完整保留 `Bellota`、`华文中宋`、`霞鹜文楷`、`Tw Cen MT`、`HYHuaGuan` 等字体，字体资源存放于 `tailors/` 目录，开箱即用。
+###### 1.1.1.1.1.1 晴空湛蓝六级标题 (`—`)
+
+六级标题收敛于极简晴空蓝 (`#0284c7`)，搭配精致等宽短横短杠 `—`，保持深层标题简洁而不失层级。
 
 ---
 
-## 📦 安装与使用指南
+# 2. 内联文本与新拟态 2.0 元素
 
-1. 点击 **[下载主题包 (main.zip)](https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip)** 并解压。
-2. 打开 Typora 主题目录：
-   - **macOS**: `Typora` → `偏好设置` → `外观` → `打开主题文件夹`
-   - **Windows / Linux**: `文件` → `偏好设置` → `外观` → `打开主题文件夹`
-3. 将解压出的：
-   - `tailors.css` 文件
-   - `tailors` 字体文件夹
-   直接拷贝到该主题文件夹中。
-4. 完全重启 Typora，在菜单栏 **“主题”** 中勾选 **Tailors** 即可生效。
+Tailors 对每一个 Markdown 内联元素都进行了专门的人机工学与美学微调：
 
-> 💡 **平台说明**：本主题在 macOS 上深度设计与测试，已进行全平台样式适配，可完美兼容 Windows 与 Linux 系统。
+- **加粗字体 (Bold)**：**深度加粗效果，采用深邃午夜蓝色相提高辨识度**
+- *斜体强调 (Italic)*：*意大利经典倾斜字形，优雅而富有书卷气息*
+- <u>下划线 (Underline)</u>：<u>采用 `#3b82f6` 晴空蓝悬浮下划线，彻底告别单调沉闷的纯黑线</u>
+- ~~删除线 (Strikethrough)~~：~~已作废或修正的内容，带平滑半透明浅灰过渡~~
+- ==荧光高亮 (Highlight)==：==温润琥珀暖阳渐变微光，长篇阅读绝不刺眼疲劳==
+- 行内代码 (Inline Code)：`console.log("Tailors Neumorphism 2.0")`，独创深邃微凹槽微拟物立体设计
+- 上标与下标 (Superscript & Subscript)：爱因斯坦质能方程 $E = mc^2$、水分子式 H~2~O、三维坐标系 $X^2 + Y^2 + Z^2 = R^2$
+- 超链接 (Hyperlinks)：[Tailors GitHub 官方代码库](https://github.com/ChiamZhang/TyporaTheme-Tailors)，带悬浮动效平滑下划线
+- 脚注注释 (Footnotes)：Tailors 主题内置了完整学术引用脚注系统[^tailors-footnote-cn]。
+
+[^tailors-footnote-cn]: 这是 Tailors 主题的标准学术脚注实现，支持点击平滑回弹定位，并在悬停时呈现柔和立体胶囊气泡。
+
+### 2.1 新拟态 `<var>` 凸起立体浮雕胶囊
+
+在文本中直接使用 `<var>` 标签，即可调用新拟态 2.0 的浮雕药丸徽章：
+
+- <var> 快捷参数：--output-format=pdf </var>
+- <var> 核心算法：A4 Page-Break Pagination Optimization </var>
+- <var> 核心色系：#F9FCFF Ice-Blue Canvas </var>
+- 鼠标悬停在 <var> 悬浮试触此胶囊 </var> 上，会呈现微凹的物理按压触感！
 
 ---
 
-## ⚙️ 个性化定制
+# 3. 经典引文与装饰气泡
 
-如需微调日落渐变色、字体栈或版芯宽度，只需打开 `tailors.css` 修改顶部的 `:root` 变量：
+Tailors 的引用块采用新拟态浮雕卡片，并在右下角点缀标志性日落双气泡微拟物小球，悬停时会从暮光金晕染为深邃海蓝：
 
-```css
-:root {
-  --primary-gradient: linear-gradient(135deg, #f7ce68 0%, #fbabfe 100%);
-  --bg-color: #F9FCFF;
-  --max-width: 860px;
+> 欲买桂花同载酒，终不似少年游！
+> 
+> *—— 经典单层引用展示。右下角伴有柔光新拟态立体小球，提供极具沉浸感的文学阅读体验。*
+
+支持多层嵌套引用：
+
+> 第一层引用：经典哲学思辨与工程实践的结合。
+>
+> > 第二层嵌套引用：Tailors 去除了多余的粗暴实心竖条，采用轻量橙色指示线，保证层级清晰且排版轻盈。
+
+---
+
+# 4. 任务列表与多级列表
+
+### 4.1 3D 拟物触感任务复选框
+
+Tailors 的任务列表摒弃了浏览器默认的生硬方框，采用 3D 新拟态微立体微动开关：
+
+- [ ] **待办事项**：凸起立体白色微按键，带柔和漫反射环境阴影；
+- [x] **已完成事项**：深邃凹陷内阴影微坑，镶嵌雪白勾选标记，伴随优雅删除线；
+- [ ] 跨平台适配验证（macOS / Windows / Linux）；
+- [x] A4 打印与 PDF 导出分页算法彻底优化。
+
+### 4.2 多级有序与无序列表
+
+1. 第一阶段：构思与色彩工学设计
+   1. 提取日落渐变色相 (`#f7ce68` → `#fbabfe`)
+   2. 确立淡冰蓝全幅底色 (`#F9FCFF`)
+2. 第二阶段：排版与工程化重构
+   - [x] 解决跨页大面积空白断层 Bug
+   - [x] 重构 H1 ~ H6 等宽几何视觉符号
+   - [ ] 丰富多语言代码高亮主题
+3. 第三阶段：社区发布与推广
+
+---
+
+# 5. 暮光渐变数据表格
+
+Tailors 表格表头采用日落渐变色相并自动处理圆角，行间采用柔和斑马纹，鼠标悬停时自动轻微浮起并伴随温暖琥珀金光指示条：
+
+| 特性维度 | 原版主题局限 | Tailors 2.0 优化成果 | 状态 |
+| :--- | :---: | :--- | :---: |
+| **画布背景** | `#ffffff` 强光刺眼 | 全幅温润淡冰蓝 `#F9FCFF`，舒适护眼 | <var>已就绪</var> |
+| **A4 跨页导出** | 第二页出现巨大空白 | 消除固定高度干扰，分页自然紧凑 | <var>出版级</var> |
+| **页面边界** | 沉重灰色大卡片边框 | 纯净无边界平铺画布，沉浸式写作 | <var>纯净版</var> |
+| **代码高亮** | 配色生硬无修饰 | macOS 红黄绿三色控制点 + 柔光画板 | <var>已实现</var> |
+| **数字数据** | 默认字形不规范 | 等宽数字排版，财务与统计清晰对齐 | `$99,880.00` |
+
+---
+
+# 6. 代码块与语法高亮
+
+所有代码块容器顶部均标配 **macOS 红黄绿三色精致微拟物按键**，代码区采用深灰磨砂立体柔光托底，提供长期编程阅读舒适度：
+
+### 6.1 Python 数据科学示例
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def sunset_gradient(n_steps: int = 100) -> np.ndarray:
+    """生成 Tailors 主题专属日落暮光色彩向量空间"""
+    start_color = np.array([247, 206, 104]) / 255.0  # #f7ce68
+    end_color = np.array([251, 171, 254]) / 255.0    # #fbabfe
+    return np.linspace(start_color, end_color, n_steps)
+
+if __name__ == "__main__":
+    colors = sunset_gradient()
+    print(f"Tailors gradient initialized with {len(colors)} chromatic steps.")
+```
+
+### 6.2 Modern C++ / Rust 核心算法
+
+```cpp
+#include <iostream>
+#include <string_view>
+#include <vector>
+
+template <typename T>
+concept PrintableTheme = requires(T t) {
+    { t.render() } -> std::same_as<void>;
+};
+
+struct TailorsTheme {
+    std::string_view name = "Tailors";
+    double version = 2.0;
+
+    void render() const {
+        std::cout << "Rendering " << name << " v" << version 
+                  << " with sunset twilight palette.\n";
+    }
+};
+
+int main() {
+    TailorsTheme theme;
+    theme.render();
+    return 0;
+}
+```
+
+```rust
+pub struct PageLayout {
+    pub canvas_color: &'static str,
+    pub font_size_pt: f32,
+    pub is_seamless: bool,
+}
+
+impl Default for PageLayout {
+    fn default() -> Self {
+        Self {
+            canvas_color: "#F9FCFF",
+            font_size_pt: 12.0, // XiaoSi standard
+            is_seamless: true,
+        }
+    }
 }
 ```
 
 ---
 
-## 💡 致谢与参考
+# 7. 数学公式排版
 
-- **物理猫 Phycat** 作者：XuJilong — [GitHub 仓库](https://github.com/sumruler/typora-theme-phycat)（*主要参考了标题体系与日落渐变色调*）
-- **Typora-Theme-Neumorphism** 作者：Soanguy — [GitHub 仓库](https://github.com/Soanguy/Typora-Theme-Neumorphism)（*主要参考了新拟态触感交互设计*）
+Tailors 支持完整的 $\LaTeX$ 与 MathJax / KaTeX 公式排版，字符清晰饱满，与正文字阶完美融合：
+
+### 7.1 行内公式 (Inline Math)
+
+著名的质能方程是 $E = mc^2$，欧拉恒等式为 $e^{i\pi} + 1 = 0$，正态分布概率密度函数 $f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$。
+
+### 7.2 块级公式 (Block Math)
+
+$$\int_{-\infty}^{+\infty} e^{-x^2} \, dx = \sqrt{\pi}$$
+
+$$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}, \quad \nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}$$
+
+$$\mathcal{L} = \mathbb{E}_{q(\mathbf{z}|\mathbf{x})}[\log p(\mathbf{x}|\mathbf{z})] - D_{\mathrm{KL}}(q(\mathbf{z}|\mathbf{x}) \parallel p(\mathbf{z}))$$
 
 ---
 
-## 📄 开源许可证
+# 8. 图表与流程图
 
-遵循 [MIT License](LICENSE) 开源协议。
+Tailors 为 Mermaid 图表提供了柔和的新拟态面板托底，线条清晰、字体自动继承：
+
+```mermaid
+flowchart LR
+    A[Markdown 源文档] --> B(Typora 渲染引擎)
+    B --> C{Tailors 主题层}
+    C -->|屏幕写作| D[无边平铺淡冰蓝画布]
+    C -->|出版打印| E[出版级 A4 紧凑 PDF]
+    C -->|Web分享| F[独立高保真 HTML 预览]
+```
+
+---
+
+# 9. 图片嵌入与智能缩放
+
+Tailors 支持通过在图片 `alt` 或 `title` 中添加数字，快速实现百分比尺寸缩放：
+
+1. **调整为 50% 宽度**：`![Maine 50](url "50")`
+2. **调整为 30% 宽度**：`![Maine 30](url "30")`
+3. **支持标准步进**：`0, 5, 10, 15, ..., 100`
+
+<center>
+
+![Tailors Preview 50](https://img2.baidu.com/it/u=3012984283,879707191&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1200 "50")
+
+</center>
+
+---
+
+# 10. 安装与配置指南
+
+### 10.1 本地安装
+
+1. 点击 **[下载最新主题包 (ZIP)](https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip)** 并解压；
+2. 打开 Typora，进入主题文件夹：
+   - **macOS**: `偏好设置` → `外观` → `打开主题文件夹`
+   - **Windows / Linux**: `文件` → `偏好设置` → `外观` → `打开主题文件夹`
+3. 将解压出的：
+   - `tailors.css` 文件
+   - `tailors` 字体与资源文件夹
+   复制粘贴进主题文件夹；
+4. 重启 Typora，在菜单栏 **「主题 (Theme)」** 中勾选 **Tailors** 即可尽享优雅写作！
+
+### 10.2 本地导出 HTML 预览
+
+- 在 Typora 中打开本 README 或任何 Markdown 文件；
+- 确保主题勾选为 **Tailors**；
+- 点击菜单栏 **「文件」➔「导出」➔「HTML (含代码高亮)」** 即可获得 100% 保真的离线/在线预览单页！
+
+---
+
+## 💡 致谢与许可
+
+- 灵感来源：
+  - [Phycat](https://github.com/sumruler/typora-theme-phycat) by XuJilong（标题设计与日落天色神髓）
+  - [Typora-Theme-Neumorphism](https://github.com/Soanguy/Typora-Theme-Neumorphism) by Soanguy（新拟态内联元素灵感）
+- 字体支持：Bellota, Tw Cen MT, 霞鹜文楷, 华文中宋, HYHuaGuan
+- 本主题遵循 [MIT License](LICENSE) 自由开源协议，欢迎 Star 与 Issue 反馈！
