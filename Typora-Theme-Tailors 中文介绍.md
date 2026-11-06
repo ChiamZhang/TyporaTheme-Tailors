@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://chiamzhang.github.io/TyporaTheme-Tailors/">🌐 在线效果预览 (Live Preview)</a> •
+  <a href="https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html">🌐 在线效果预览 (Live Preview)</a> •
   <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors">🏠 项目主页 (GitHub)</a> •
   <a href="README.md">🌐 English Documentation</a> •
   <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip">⬇️ 下载最新主题包 (ZIP)</a> •
@@ -16,7 +16,7 @@
 
 ## 🔗 快速链接
 
-- **在线效果预览 (Live Preview)**: [https://chiamzhang.github.io/TyporaTheme-Tailors/](https://chiamzhang.github.io/TyporaTheme-Tailors/)
+- **在线效果预览 (Live Preview)**: [https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html)
 - **项目主页**: [https://github.com/ChiamZhang/TyporaTheme-Tailors](https://github.com/ChiamZhang/TyporaTheme-Tailors)
 - **主题包下载**: [TyporaTheme-Tailors.zip](https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip)
 - **英文文档 (English)**: [README.md](README.md)

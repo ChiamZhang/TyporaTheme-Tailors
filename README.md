@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://chiamzhang.github.io/TyporaTheme-Tailors/">🌐 在线效果预览 (Live Preview)</a> •
+  <a href="https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html">🌐 在线效果预览 (Live Preview)</a> •
   <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors">🏠 项目主页 (GitHub)</a> •
   <a href="Typora-Theme-Tailors%20中文介绍.md">🇨🇳 中文介绍</a> •
   <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip">⬇️ 下载主题包 (ZIP)</a> •
@@ -16,7 +16,7 @@
 
 ## 🔗 Quick Links
 
-- **Live Preview / 在线实时预览**: [https://chiamzhang.github.io/TyporaTheme-Tailors/](https://chiamzhang.github.io/TyporaTheme-Tailors/)
+- **Live Preview / 在线实时预览**: [https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html)
 - **HomePage / 项目主页**: [https://github.com/ChiamZhang/TyporaTheme-Tailors](https://github.com/ChiamZhang/TyporaTheme-Tailors)
 - **Download / 主题下载**: [TyporaTheme-Tailors.zip](https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip)
 - **Chinese Docs / 中文说明**: [Typora-Theme-Tailors 中文介绍.md](Typora-Theme-Tailors%20中文介绍.md)
