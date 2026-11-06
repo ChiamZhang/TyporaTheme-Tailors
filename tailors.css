@@ -1567,4 +1567,20 @@ body.typora-export #write hr,
   .md-hover-tip {
     display: none !important;
   }
+
+  /* Mermaid 图表打印态：纯白画布与清晰墨色，节约耗材 */
+  body #write .md-diagram-panel svg {
+    background: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+  }
+
+  body #write .md-diagram-panel text,
+  body #write .md-diagram-panel tspan,
+  body #write .md-diagram-panel .label,
+  body #write .md-diagram-panel .nodeLabel,
+  body #write .md-diagram-panel .edgeLabel {
+    fill: #0f172a !important;
+    color: #0f172a !important;
+  }
 }
