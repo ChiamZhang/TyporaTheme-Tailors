@@ -1,142 +1,123 @@
----
-layout: theme
-title: Tailors
-category: theme
-homepage: https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html
-download: https://github.com/ChiamZhang/TyporaTheme-Tailors
-author: ChiamZhang
-thumbnail: tailors.png
-typora-root-url: ../../
----
+# Tailors — Typora Theme
 
-# Typora-Theme-Tailors  Introduction  [中文版](https://github.com/ChiamZhang/TyporaTheme-Tailors/blob/main/Typora-Theme-Tailors%20%E4%B8%AD%E6%96%87%E4%BB%8B%E7%BB%8D.md)
+<p align="center">
+  <b>日落天色渐变 × 新拟态立体光影 2.0 × 全幅温润淡冰蓝 × 出版级 A4 跨页导出</b>
+</p>
 
-
-
-## [HomePage](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html)
-## [DownLoad](https://github.com/ChiamZhang/TyporaTheme-Tailors)
-
-## Introduction
-This theme is inspired by my two favorite themes:
-
-1. Phycat by XuJilong. Homepage: [GitHub - sumruler/typora-theme-phycat: Phycat Typora Theme](https://github.com/sumruler/typora-theme-phycat) **Mainly referencing the title part**.
-2. Typora-Theme-Neumorphism by Soanguy. Homepage: [GitHub - Soanguy/Typora-Theme-Neumorphism: Neumorphism style typora theme](https://github.com/Soanguy/Typora-Theme-Neumorphism) **Mainly referencing the inline part**.
-3. I changed a lot of the colors and unnecessary hover CSS to make the overall style more compatible. Since Soanguy hasn’t updated for a long time, I encountered some bugs while using it, which I fixed.
-4. Continuous updates, if there are any issues, please raise them in the issue section, and I will fix them when I have time.
-5. Tailors means that I have patched together this theme from various sources, feeling a bit embarrassed.
-
-## Usage
-Unzip the package and copy 
-1. `tailors.css`
-2. `tailors` folder
-
-to the Typora Theme folder.
-
-![alt text](https://chiamzhang.github.io/img/Introduction.png)
-
-## Additional
-
-Personalization can be done by changing the parameters in the Root Module
-
-
-
-
-# Title Styles
+<p align="center">
+  <a href="Typora-Theme-Tailors%20中文介绍.md">🇨🇳 中文介绍</a> •
+  <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip">⬇️ 下载主题包 (ZIP)</a> •
+  <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/issues">💬 反馈与建议</a>
+</p>
 
 ---
 
-# First Level Title
+## 📖 Introduction
 
-## Second Level Title
+**Tailors** is an elegant, publication-ready Typora theme that fuses the iconic **Sunset Gradient** (inspired by *Phycat*) with tactile, refined **Neumorphism 2.0** (inspired by *Typora-Theme-Neumorphism*).
 
-### Third Level Title
+Designed for long-form writers, researchers, and engineers, Tailors eliminates harsh white cutouts and distracting high-saturation accents, providing a seamless `#F9FCFF` ice-blue canvas, authentic classical typography, and mathematically calibrated print/PDF pagination.
 
-#### Fourth Level Title
+---
 
-##### Fifth Level Title
+## 🎨 Visual Showcase
 
-###### Sixth Level Title
+### 1. Sunset Twilight Hierarchy & Dot Patterns (H1 ~ H6)
+- **H1 Centered Title**: Anchored with a signature sunset gradient indicator underline;
+- **H2 Capsule Badge**: Iconic `linear-gradient(135deg, #f7ce68, #fbabfe)` pill badge with soft neumorphic depth;
+- **H3 ~ H6 Sunset Twilight Palette**: 
+  - **H3 Coral Sunset Orange (`#ea580c`)**: Left accent bar accompanied by a 3-dot amber pattern;
+  - **H4 Twilight Rose (`#f43f5e`)**: 8px solid glowing dot accompanied by a 4-dot rose pattern;
+  - **H5 Iris Violet (`#8b5cf6`)**: 8px delicate hollow ring accompanied by a 5-dot violet pattern;
+  - **H6 Midnight Azure (`#0284c7`)**: 8px minimal horizontal dash accompanied by a 6-dot azure pattern.
 
-# Image Tips
+![Sunset Twilight Heading System](media/showcase-headings.png)
 
-1. Quickly adjust the photo size: Adjust any number in the positions below to the desired scaling size.
+---
 
-    <center><var>Method: <code>![Photo Name Number](Photo URL "Number")</code> </var></center> 
+### 2. Refined macOS-Style Code Fences
+- Embedded classic **macOS red/yellow/green triple-dot controls**;
+- Soft neumorphic drop shadow (`box-shadow: 8px 8px 24px rgba(166, 180, 204, 0.28), -8px -8px 24px #fff`);
+- WCAG-tested high-contrast syntax highlighting for sustained code-reading comfort.
 
-    <center><var>For example: Adjust to 50% size <code>![Photo Name 50](Photo URL "50")</code> </var></center> 
+![macOS Code Block](media/showcase-code.png)
 
-    > Note: The default scaling size is set in steps of 5, i.e., 0, 5, 10, 15...
+---
 
-    ![Maine 50](https://img2.baidu.com/it/u=3012984283,879707191&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1200)
+### 3. Tactile Inline Formatting & `<var>` Badges
+- **`<var>` Neumorphic Capsules**: Tactile raised pill badges with smooth concave inset on hover;
+- **Deep-Ink Inline `code`**: Concave dark navy groove (`#101c3e`) with fresh lilac text (`#e6dcff`);
+- **Sky-Blue Underlines (`<u>`)**: Clean `#3b82f6` fluorescent underline离底 3.5px, replacing gloomy pure black lines.
 
-    ![Maine 30](https://img2.baidu.com/it/u=3012984283,879707191&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1200)
+![Inline Styles Showcase](media/showcase-inline.png)
 
-1. Note that photos cannot be adjusted to inline elements.
+---
 
-## HTML Elements Introduction
+### 4. Neumorphic Blockquotes & Sunset Tables
+- **Blockquote**: Raised neumorphic card with floating signature decorative bubbles that glow warm sunset amber on hover;
+- **Sunset Table**: Gradient headers with gentle zebra striping and row hover micro-elevation.
 
-1. You can introduce the following styles through the `<var> </var>` element:
-   - <var> The original meaning of this element is to define variables.</var>
-   - <var> Like this</var>
+![Tables & Quotes Showcase](media/showcase-table.png)
 
-# Typographical Introduction
+---
 
-## Blockquote Style
+### 5. Interactive 3D Task Lists
+- **Unchecked**: 3D convex micro-button with natural light/shadow depth;
+- **Checked**: Sunken concave groove with a crisp white checkmark and smooth strikethrough text.
 
-> Absorb everyone's strengths and modify everyone's shortcomings.
+![Interactive Task List Showcase](media/showcase-tasks.png)
 
-## Inline Styles
+---
 
-Inline styles support **bold**, *emphasis*, `code`, <u>underline</u>, ~~strikethrough~~, $\LaTeX$, X^2^, H~2~O, ==highlight==, [link](https://typora.io).
+## ✨ Key Features & Enhancements
 
-## Table Styles
+- 🎨 **Full-Bleed Icy Blue Canvas** — The entire window and export output share the soothing `#F9FCFF` tone, completely eliminating stark white cutouts.
+- 📐 **Aligned with Official Typora Standards** — Standard `860px` reading measure with responsive expansion to `1024px` (>1400px) and `1200px` (>1800px).
+- 🖨️ **Publisher-Grade PDF Export** —
+  - Default standard XiaoSi (小四号) body font size (`12pt / 16px`) with `1.65` line height;
+  - Clean page-break algorithms (`break-inside: auto`) prevent awkward multi-page blank gaps;
+  - Strips all heavy neumorphic shadows in print mode for ink-saving, crisp publication output.
+- 🔤 **Authentic Classical Typography** — Bundles offline fonts (`Bellota`, `Tw Cen MT`, `HYHuaGuan`, `霞鹜文楷`, `华文中宋`) inside `tailors/`.
 
-|  Align Left   |       Align Center       | Align Right |
-| :-----------: | :----------------------: | :---------: |
-| Third column  | <u>Some lengthy text</u> |    $1600    |
-| Second column |       Align center       |     $12     |
-| Zebra stripes |        Very tidy         |     $1      |
+---
 
-## List Styles
+## 📦 Installation & Usage
 
-1. Ordered list item 1.
-2. Ordered list item 2.
-   + Unordered sublist item 1.
-     + Second-level unordered sublist item 1
-   + Unordered sublist item 2.
-     + [ ] Completed item. Use "[]"
-     + [x] Uncompleted item. Use "[x]"
+1. Click **[Download Theme (main.zip)](https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip)** and extract the archive.
+2. In Typora, open the theme directory:
+   - **macOS**: `Typora` → `Preferences` → `Appearance` → `Open Theme Folder`
+   - **Windows / Linux**: `File` → `Preferences` → `Appearance` → `Open Theme Folder`
+3. Copy:
+   - `tailors.css`
+   - `tailors` directory
+   directly into the theme folder.
+4. Restart Typora and select **Tailors** from the **Themes** menu.
 
-## Code Styles
+> 💡 **Notice**: Designed and tested on macOS. Fully functional on Windows and Linux (cross-platform compatible).
 
-```html
-<!DOCTYPE html>
-<html>
-<body>
+---
 
-<h1>*= Operator</h1>
-  
-<p id="demo"></p>
+## ⚙️ Customization
 
-<script>
-var x = 10;
-x *= 5;
-document.getElementById("demo").innerHTML = x;
-</script>
+All primary gradients, colors, font stacks, and layout dimensions are organized in the `:root` block at the top of `tailors.css`:
 
-</body>
-</html>
-```
-
-```cpp
-#include<iostream>
-using namespace std;
-int main(){
-    cout << "hello world!" << endl;
-    return 0;
+```css
+:root {
+  --primary-gradient: linear-gradient(135deg, #f7ce68 0%, #fbabfe 100%);
+  --bg-color: #F9FCFF;
+  --max-width: 860px;
 }
 ```
 
-## Table of Contents
+---
 
-[TOC]
+## 💡 Acknowledgements & Credits
+
+- [Phycat](https://github.com/sumruler/typora-theme-phycat) by XuJilong — *Inspiration for the title hierarchy and sunset gradient.*
+- [Typora-Theme-Neumorphism](https://github.com/Soanguy/Typora-Theme-Neumorphism) by Soanguy — *Inspiration for tactile neumorphic styling.*
+
+---
+
+## 📄 License
+
+Distributed under the [MIT License](LICENSE).
