@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tailors Theme for Typora - 官方实时视觉展示 / Live Preview</title>
+<link rel="stylesheet" href="tailors.css">
+<style>
+  /* 顶部快捷导航条 */
+  .tailors-top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: rgba(249, 252, 255, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.75);
+    box-shadow: 0 4px 16px rgba(166, 180, 204, 0.12);
+  }
+  .tailors-top-nav .brand {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a2238;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tailors-top-nav .brand span.badge {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background: var(--primary-gradient);
+    color: #2b1836;
+    font-weight: 700;
+  }
+  .tailors-top-nav .nav-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .tailors-top-nav .nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #334155;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4fa 100%);
+    box-shadow: 3px 3px 8px rgba(166, 180, 204, 0.28), -3px -3px 8px rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    transition: all 0.25s ease;
+  }
+  .tailors-top-nav .nav-btn:hover {
+    box-shadow: inset 2px 2px 5px rgba(166, 180, 204, 0.28), inset -2px -2px 5px rgba(255, 255, 255, 0.95);
+    color: #4f46e5;
+  }
+  .tailors-top-nav .nav-btn.primary {
+    background: var(--primary-gradient);
+    color: #2b1836;
+    box-shadow: 0 4px 12px rgba(247, 206, 104, 0.35);
+    border: none;
+  }
+  .tailors-top-nav .nav-btn.primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(247, 206, 104, 0.45);
+  }
+  @media (max-width: 680px) {
+    .tailors-top-nav {
+      flex-direction: column;
+      gap: 10px;
+      padding: 0.6rem 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- 页面顶部快捷导航 -->
+<header class="tailors-top-nav">
+  <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors" class="brand">
+    Tailors Theme <span class="badge">Typora</span>
+  </a>
+  <nav class="nav-links">
+    <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors" class="nav-btn">
+      ⭐ GitHub 仓库
+    </a>
+    <a href="Typora-Theme-Tailors%20中文介绍.md" class="nav-btn">
+      🇨🇳 中文说明
+    </a>
+    <a href="README.md" class="nav-btn">
+      📄 README
+    </a>
+    <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip" class="nav-btn primary">
+      ⬇️ 下载主题 (ZIP)
+    </a>
+  </nav>
+</header>
+
+<content>
+<div id="write">
+
+  <!-- 主标题 -->
+  <h1 id="tailors-theme"><span>Tailors Theme for Typora</span></h1>
+  <p style="text-align: center; color: #52607d; font-size: 1.15rem; margin-top: -0.5rem; margin-bottom: 1.2rem;">
+    <span>日落天色渐变 · 新拟态立体光影 2.0 · 全幅温润淡冰蓝 · 出版级 A4 跨页导出</span>
+  </p>
+
+  <p style="text-align: center; margin-bottom: 2.2rem;">
+    <var><span>Neumorphic 2.0</span></var>
+    &nbsp;
+    <var><span>Sunset Gradient</span></var>
+    &nbsp;
+    <var><span>A4 Print Native</span></var>
+    &nbsp;
+    <var><span>Classic Typography</span></var>
+  </p>
+
+  <hr />
+
+  <!-- 1. 标题排版体系展示 -->
+  <h2 id="headings"><span>1. 经典日落天色渐变与色彩层级体系 (Headings)</span></h2>
+  <p><span>Tailors 汲取经典日落渐变与多层级色彩徽标设计，层次生动丰富，让长文排版结构自然明晰：</span></p>
+
+  <h3 id="h3-demo"><span>三级标题 · 珊瑚暖橘指示条 (Heading 3)</span></h3>
+  <p><span>三级标题左侧配有珊瑚暖橘专属强调指示条与 3 阶暖橘点阵徽标，字阶舒适饱满。</span></p>
+
+  <h4 id="h4-demo"><span>四级标题 · 暮色玫红发光圆点 (Heading 4)</span></h4>
+  <p><span>四级标题带有暮色玫红实心微光圆点与 4 阶玫红点阵，段落切分醒目灵动（8px 等宽规格）。</span></p>
+
+  <h5 id="h5-demo"><span>五级标题 · 暮光罗兰空心环圈 (Heading 5)</span></h5>
+  <p><span>五级标题带有暮光罗兰空心环圈与 5 阶罗兰紫点阵，结构严谨层次细腻（8px 等宽规格）。</span></p>
+
+  <h6 id="h6-demo"><span>六级标题 · 深邃天青极简短横杠 (Heading 6)</span></h6>
+  <p><span>六级标题搭配深邃天青等宽短横杠与 6 阶深天青点阵，支持深度技术笔记与复杂文档的整洁编排（8px 等宽规格）。</span></p>
+
+  <hr />
+
+  <!-- 2. 精致代码块 -->
+  <h2 id="code-blocks"><span>2. 精致 macOS 拟物代码块 (Code Fences)</span></h2>
+  <p><span>代码块内置经典 macOS 红黄绿拟物三色圆点，搭配柔和新拟态立体浮雕与高对比度语法高亮，尽享沉浸式代码阅读：</span></p>
+
+  <pre class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python" style="position: relative;"><div class="CodeMirror cm-s-inner CodeMirror-wrap"><div class="CodeMirror-scroll"><div class="CodeMirror-lines"><div class="CodeMirror-code">
+<div class="CodeMirror-line"><span class="cm-keyword">def</span> <span class="cm-def">render_tailors_theme</span>():</div>
+<div class="CodeMirror-line">    <span class="cm-comment"># 全局温润淡冰蓝底色，彻底告别刺眼纯白反光</span></div>
+<div class="CodeMirror-line">    palette = {</div>
+<div class="CodeMirror-line">        <span class="cm-string">"canvas"</span>: <span class="cm-string">"#F9FCFF"</span>,  <span class="cm-comment"># 全幅统一背景</span></div>
+<div class="CodeMirror-line">        <span class="cm-string">"sunset_gradient"</span>: [<span class="cm-string">"#f7ce68"</span>, <span class="cm-string">"#fbabfe"</span>],</div>
+<div class="CodeMirror-line">        <span class="cm-string">"neumorphism"</span>: <span class="cm-string">"Dual soft light & dark shadows (Convex & Inset)"</span>,</div>
+<div class="CodeMirror-line">        <span class="cm-string">"typography"</span>: [<span class="cm-string">"Bellota"</span>, <span class="cm-string">"华文中宋"</span>, <span class="cm-string">"霞鹜文楷"</span>],</div>
+<div class="CodeMirror-line">        <span class="cm-string">"editor_width"</span>: <span class="cm-string">"860px (Responsive to 1200px)"</span></div>
+<div class="CodeMirror-line">    }</div>
+<div class="CodeMirror-line">    <span class="cm-keyword">return</span> <span class="cm-string">f"Enjoy tactile, distraction-free writing with Tailors!"</span></div>
+</div></div></div></div></pre>
+
+  <hr />
+
+  <!-- 3. 内联与排版 -->
+  <h2 id="inline-components"><span>3. 内联文本与微拟物交互 (Inline Styles &amp; Neumorphism)</span></h2>
+  <p><span>文字排版完整支持所有 Markdown 行内语法，各元素之间拥有和谐统一的视觉层级与细腻触感：</span></p>
+  <ul>
+    <li><span>支持 <strong>粗体强调 (Bold)</strong>、<em>斜体字形 (Italic)</em> 以及具有深蓝暗夜内凹凹槽质感的 <code>行内代码 (Inline Code)</code>；</span></li>
+    <li><span>提供离底 3.5px 的清新晴空蓝 <u>荧光下划线 (Underline)</u> 与 <mark>温润高亮标记 (Highlight)</mark>；</span></li>
+    <li><span>包含删除线 <del>Strikethrough</del> 与精致渐变展开超链接 <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors">Interactive Link</a>；</span></li>
+    <li><span>通过 HTML <code>&lt;var&gt;</code> 标签可直接生成新拟态立体微拟物胶囊：<var>微拟物标签</var>、<var>凸起药丸徽标</var>（悬停微凹）。</span></li>
+  </ul>
+
+  <hr />
+
+  <!-- 4. 引用块与表格 -->
+  <h2 id="quotes-and-tables"><span>4. 优雅引用块与日落渐变表格 (Quotes &amp; Tables)</span></h2>
+  
+  <blockquote>
+    <p><span>凡所书写，皆为风景。Tailors 深度缝合日落渐变与新拟态 2.0 光影精粹，右下角重现经典的立体装饰气泡，并在鼠标划过时泛出温暖的日落金光。</span></p>
+  </blockquote>
+
+  <p><span>通透开阔的现代新拟态圆角表格，配备标志性日落渐变表头与微凹凸交替条纹：</span></p>
+
+  <figure class="md-table-fig">
+    <table>
+      <thead>
+        <tr>
+          <th>特性模块</th>
+          <th>设计定位</th>
+          <th>视觉规格</th>
+          <th>排版状态</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>全局底色</strong></td>
+          <td>温润淡冰蓝</td>
+          <td><code>#F9FCFF</code> 全幅统一步调</td>
+          <td>已完美统一</td>
+        </tr>
+        <tr>
+          <td><strong>新拟态立体光影</strong></td>
+          <td>Neumorphism 2.0</td>
+          <td>凸起浮雕画板 + 深邃内凹凹槽</td>
+          <td>已全面升级</td>
+        </tr>
+        <tr>
+          <td><strong>屏幕版芯</strong></td>
+          <td>Typora 官方标准</td>
+          <td><code>860px</code>（宽屏自适应扩展至 1200px）</td>
+          <td>已严格对齐</td>
+        </tr>
+        <tr>
+          <td><strong>出版级 PDF 导出</strong></td>
+          <td>无缝跨页流式打印</td>
+          <td>小四号字阶 / 根除第二页空白断层</td>
+          <td>已校准就绪</td>
+        </tr>
+      </tbody>
+    </table>
+  </figure>
+
+  <hr />
+
+  <!-- 5. 交互任务清单 -->
+  <h2 id="task-lists"><span>5. 交互式 3D 任务清单 (Interactive Task List)</span></h2>
+  <ul class="task-list">
+    <li class="task-list-item"><input type="checkbox" checked> <span>全幅一体化温润淡冰蓝底色（#F9FCFF），告别刺眼白屏</span></li>
+    <li class="task-list-item"><input type="checkbox" checked> <span>全新日落天色进阶标题体系（H1 ~ H6）与灵动点阵图案</span></li>
+    <li class="task-list-item"><input type="checkbox" checked> <span>新拟态立体光影 2.0：代码凹槽、&lt;var&gt; 凸起胶囊与 3D 复选框</span></li>
+    <li class="task-list-item"><input type="checkbox"> <span>未完成任务项：呈现饱满自然的 3D 凸起浮雕按钮质感</span></li>
+  </ul>
+
+  <hr />
+
+  <!-- 6. 快速安装指引 -->
+  <h2 id="quick-install"><span>6. 快速安装与使用指南 (Installation)</span></h2>
+  <ol>
+    <li><span>点击页面右上角或下方按钮下载主题包：<a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/archive/refs/heads/main.zip"><strong>下载 TyporaTheme-Tailors (ZIP)</strong></a></span></li>
+    <li><span>在 Typora 中打开主题文件夹：
+      <ul>
+        <li>macOS: <code>Typora</code> → <code>偏好设置</code> → <code>外观</code> → <code>打开主题文件夹</code></li>
+        <li>Windows / Linux: <code>文件</code> → <code>偏好设置</code> → <code>外观</code> → <code>打开主题文件夹</code></li>
+      </ul>
+    </span></li>
+    <li><span>解压压缩包，将 <code>tailors.css</code> 与 <code>tailors</code> 字体文件夹拷贝到主题目录中。</span></li>
+    <li><span>重启 Typora，在顶部菜单 <strong>“主题”</strong> 中选择 <strong>Tailors</strong> 即可尽享优雅写作。</span></li>
+  </ol>
+
+  <blockquote style="margin-top: 1.5rem;">
+    <p><span>💡 <strong>平台兼容性提示</strong>：本主题在 macOS 上深度设计与测试，已完成跨平台排版优化，全面兼容 Windows 与 Linux 系统。</span></p>
+  </blockquote>
+
+</div>
+</content>
+
+</body>
+</html>
