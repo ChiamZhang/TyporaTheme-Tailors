@@ -532,19 +532,25 @@ a.md-header-anchor,
    行内代码与代码块 (Code)
    ========================================================================== */
 
-/* 行内代码：浅色微拟物凹槽 + 深色高清晰字体 (浅色模式) */
+/* 行内代码：浅色新拟态凸起浮雕胶囊 (Neumorphic Relief Pill) */
 #write code {
   font-family: var(--monospace);
   font-size: 0.88em;
-  padding: 0.18em 0.55em;
-  margin: 0 3px;
+  padding: 0.2em 0.55em;
+  margin: 0 4px;
   border-radius: 6px;
-  background: linear-gradient(135deg, #f1f5fa 0%, #e6ecf5 100%);
+  background: linear-gradient(145deg, #ffffff 0%, #edf3fa 100%);
   color: #0f172a;
-  border: 1px solid rgba(203, 213, 225, 0.85);
-  box-shadow: inset 1px 1px 2px rgba(166, 180, 204, 0.28), 0 1px 1px rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 2px 2px 6px rgba(166, 180, 204, 0.38), -2px -2px 6px rgba(255, 255, 255, 0.95);
   word-break: break-all;
   letter-spacing: 0.01em;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+#write code:hover {
+  box-shadow: 3px 3px 8px rgba(166, 180, 204, 0.45), -3px -3px 8px rgba(255, 255, 255, 1);
 }
 
 /* 围栏代码块容器：新拟物凸起浮雕画板 (立体柔光阴影) */
