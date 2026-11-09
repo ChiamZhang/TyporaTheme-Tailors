@@ -980,11 +980,25 @@ body #write img[alt~="100"], body #write img[title~="100"] { width: 100%; }
    图表与思维导图 (Mermaid & Diagrams) - 暗夜全景适配
    ========================================================================== */
 
+/* 彻底清除图表外层代码块容器的边框、阴影与红绿灯控制点，只保留纯粹图表 */
 body #write pre.md-diagram {
   background: transparent !important;
+  border: none !important;
   box-shadow: none !important;
-  padding: 0;
+  padding: 0 !important;
+  margin: 2rem 0 !important;
   text-align: center;
+}
+
+body #write pre.md-diagram::before {
+  display: none !important;
+  content: none !important;
+}
+
+body #write pre.md-diagram:hover {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 body #write .md-diagram-panel {

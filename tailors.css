@@ -941,11 +941,25 @@ body #write img[alt~="100"], body #write img[title~="100"] { width: 100%; }
    图表与思维导图 (Mermaid & Diagrams) - 字体继承与新拟态托底
    ========================================================================== */
 
+/* 彻底清除图表外层代码块容器的边框、阴影与红绿灯控制点，只保留纯粹图表 */
 body #write pre.md-diagram {
-  background: transparent;
-  box-shadow: none;
-  padding: 0;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 2rem 0 !important;
   text-align: center;
+}
+
+body #write pre.md-diagram::before {
+  display: none !important;
+  content: none !important;
+}
+
+body #write pre.md-diagram:hover {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 body #write .md-diagram-panel {
@@ -956,13 +970,13 @@ body #write .md-diagram-panel {
 body #write .md-diagram-panel svg {
   border-radius: 12px;
   background: #ffffff !important;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 18px -2px rgba(26, 34, 56, 0.05);
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 18px -2px rgba(26, 34, 56, 0.06) !important;
   padding: 1.25rem;
   font-family: var(--mermaid-font-family) !important;
 }
 
-/* 强制穿透覆盖 Mermaid 内部所有 SVG/HTML 文本节点，完全继承主题中西文字体体系 */
+/* 强制穿透覆盖 Mermaid 内部所有 SVG/HTML 文本节点，完全继承主题中西文字体体系与清晰深色文字 */
 body #write .md-diagram-panel text,
 body #write .md-diagram-panel tspan,
 body #write .md-diagram-panel .label,
@@ -983,6 +997,105 @@ body #write .md-diagram-panel foreignObject div,
 body #write .md-diagram-panel foreignObject span,
 body #write .md-diagram-panel foreignObject p {
   font-family: var(--mermaid-font-family) !important;
+  fill: #0f172a !important;
+  color: #0f172a !important;
+}
+
+/* Mermaid 节点图形：素雅浅灰底色 + 极简 1px 细线边框，与暗色模式结构统一 */
+body #write .md-diagram-panel .node rect,
+body #write .md-diagram-panel .node circle,
+body #write .md-diagram-panel .node ellipse,
+body #write .md-diagram-panel .node polygon,
+body #write .md-diagram-panel .node path,
+body #write .md-diagram-panel .actor rect {
+  fill: #f8fafc !important;
+  stroke: #cbd5e1 !important;
+  stroke-width: 1px !important;
+}
+
+/* 决策条件菱形节点高亮 */
+body #write .md-diagram-panel .node.rhombus polygon {
+  fill: #f8fafc !important;
+  stroke: #cbd5e1 !important;
+  stroke-width: 1px !important;
+}
+
+/* 子图容器与集群框 (Subgraphs / Clusters) */
+body #write .md-diagram-panel .cluster rect {
+  fill: rgba(241, 245, 249, 0.6) !important;
+  stroke: #cbd5e1 !important;
+  stroke-width: 1px !important;
+  stroke-dasharray: 4, 4 !important;
+}
+
+/* 连接线与导轨 (Flowchart & Sequence Edges) */
+body #write .md-diagram-panel .edgePath .path,
+body #write .md-diagram-panel .edge-thickness-normal,
+body #write .md-diagram-panel .flowchart-link,
+body #write .md-diagram-panel .messageLine0,
+body #write .md-diagram-panel .messageLine1 {
+  stroke: #64748b !important;
+  stroke-width: 1.2px !important;
+}
+
+/* 箭头标记 (Arrowheads & Markers) */
+body #write .md-diagram-panel .arrowheadPath,
+body #write .md-diagram-panel marker path {
+  fill: #64748b !important;
+  stroke: #64748b !important;
+}
+
+/* 连线文字底板与边上的注释 (Edge Labels & Annotations) - 纯白底色无边框，与画布浑然一体遮挡连线 */
+body #write .md-diagram-panel .edgeLabel,
+body #write .md-diagram-panel .edgeLabel div,
+body #write .md-diagram-panel .edgeLabel p,
+body #write .md-diagram-panel foreignObject {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* 连线文本标签：采用与画布相同的纯白底遮挡穿插连线，彻底去除多余边框和阴影 */
+body #write .md-diagram-panel .edgeLabel span {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #475569 !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 1px 6px !important;
+  border-radius: 4px !important;
+  display: inline-block !important;
+}
+
+/* SVG 矢量模式兜底 */
+body #write .md-diagram-panel .edgeLabel rect,
+body #write .md-diagram-panel .labelBkg {
+  fill: #ffffff !important;
+  stroke: none !important;
+}
+
+/* 时序图与状态图注释块 (Notes) */
+body #write .md-diagram-panel .note,
+body #write .md-diagram-panel rect.note,
+body #write .md-diagram-panel path.note,
+body #write .md-diagram-panel polygon.note {
+  fill: #fefce8 !important;
+  stroke: #cbd5e1 !important;
+  stroke-width: 1px !important;
+}
+
+body #write .md-diagram-panel .noteText,
+body #write .md-diagram-panel .noteText *,
+body #write .md-diagram-panel .noteText tspan {
+  fill: #0f172a !important;
+  color: #0f172a !important;
+}
+
+/* 时序图 Lifeline 竖虚线 */
+body #write .md-diagram-panel line {
+  stroke: rgba(148, 163, 184, 0.4) !important;
 }
 
 /* ==========================================================================
