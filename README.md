@@ -12,6 +12,10 @@
   <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/issues">💬 Issues & Feedback</a>
 </p>
 
+<p align="center">
+  <img src="media/Introduction.png" alt="Tailors Typora Theme Overview" width="100%">
+</p>
+
 ---
 
 ## 🔗 Quick Links
@@ -42,6 +46,10 @@
 
 # 1. Heading Visual Hierarchy
 
+<p align="center">
+  <img src="media/showcase-headings.png" alt="Heading Hierarchy Showcase" width="100%">
+</p>
+
 Tailors features a meticulously calibrated **Sunset Twilight** chromatic progression, pairing distinct geometric accents with custom gradient typography:
 
 ## 1.1 Level 2 Subheading Capsule
@@ -67,6 +75,10 @@ Level 6 headings gracefully conclude with minimalistic sky blue (`#0284c7`), pre
 ---
 
 # 2. Inline Typography & Neumorphism 2.0
+
+<p align="center">
+  <img src="media/showcase-inline.png" alt="Inline Typography & Neumorphic Elements" width="100%">
+</p>
 
 Every Markdown inline element in Tailors has been ergonomically and aesthetically tuned:
 
@@ -111,6 +123,10 @@ Multi-tier nested quotes are fully supported:
 
 # 4. Lists & 3D Tactile Task Checkboxes
 
+<p align="center">
+  <img src="media/showcase-tasks.png" alt="3D Tactile Task Checkboxes" width="100%">
+</p>
+
 ### 4.1 3D Tactile Task Checkboxes
 
 Tailors swaps default flat browser checkboxes for 3D tactile neumorphic micro-switches:
@@ -135,6 +151,10 @@ Tailors swaps default flat browser checkboxes for 3D tactile neumorphic micro-sw
 
 # 5. Sunset Gradient Tables
 
+<p align="center">
+  <img src="media/showcase-table.png" alt="Sunset Twilight Tables" width="100%">
+</p>
+
 Table headers showcase smooth sunset gradient tones with rounded corners, gentle zebra striping across alternate rows, and subtle hover elevation with warm amber accent glow:
 
 | Feature Dimension | Default Theme Limitations | Tailors 2.0 Enhancement | Status |
@@ -148,6 +168,10 @@ Table headers showcase smooth sunset gradient tones with rounded corners, gentle
 ---
 
 # 6. Code Fences & Syntax Highlighting
+
+<p align="center">
+  <img src="media/showcase-code.png" alt="macOS Code Blocks" width="100%">
+</p>
 
 Every code block is crowned with **macOS traffic light buttons (Red, Amber, Green)** on a soft frosted dark backdrop, delivering top-tier code reading comfort:
 

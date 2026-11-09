@@ -12,6 +12,10 @@
   <a href="https://github.com/ChiamZhang/TyporaTheme-Tailors/issues">💬 反馈与建议</a>
 </p>
 
+<p align="center">
+  <img src="media/IntroductionChinese.png" alt="Tailors 主题全景效果预览" width="100%">
+</p>
+
 ---
 
 ## 🔗 快速链接
@@ -42,6 +46,10 @@
 
 # 1. 标题视觉系统展示
 
+<p align="center">
+  <img src="media/showcase-headings.png" alt="标题视觉系统展示" width="100%">
+</p>
+
 Tailors 采用专门调校的 **Sunset Twilight（日落暮光）** 渐变与色阶系统，所有标题均配置了清晰的等宽几何标识与专属渐变质感：
 
 ## 1.1 二级标题胶囊
@@ -67,6 +75,10 @@ Tailors 采用专门调校的 **Sunset Twilight（日落暮光）** 渐变与色
 ---
 
 # 2. 内联文本与新拟态 2.0 元素
+
+<p align="center">
+  <img src="media/showcase-inline.png" alt="内联文本与新拟态 2.0 元素展示" width="100%">
+</p>
 
 Tailors 对每一个 Markdown 内联元素都进行了专门的人机工学与美学微调：
 
@@ -111,6 +123,10 @@ Tailors 的引用块采用新拟态浮雕卡片，并在右下角点缀标志性
 
 # 4. 任务列表与多级列表
 
+<p align="center">
+  <img src="media/showcase-tasks.png" alt="3D 拟物触感任务复选框展示" width="100%">
+</p>
+
 ### 4.1 3D 拟物触感任务复选框
 
 Tailors 的任务列表摒弃了浏览器默认的生硬方框，采用 3D 新拟态微立体微动开关：
@@ -135,6 +151,10 @@ Tailors 的任务列表摒弃了浏览器默认的生硬方框，采用 3D 新�
 
 # 5. 暮光渐变数据表格
 
+<p align="center">
+  <img src="media/showcase-table.png" alt="暮光渐变数据表格展示" width="100%">
+</p>
+
 Tailors 表格表头采用日落渐变色相并自动处理圆角，行间采用柔和斑马纹，鼠标悬停时自动轻微浮起并伴随温暖琥珀金光指示条：
 
 | 特性维度 | 原版主题局限 | Tailors 2.0 优化成果 | 状态 |
@@ -148,6 +168,10 @@ Tailors 表格表头采用日落渐变色相并自动处理圆角，行间采用
 ---
 
 # 6. 代码块与语法高亮
+
+<p align="center">
+  <img src="media/showcase-code.png" alt="macOS 拟物代码块与语法高亮展示" width="100%">
+</p>
 
 所有代码块容器顶部均标配 **macOS 红黄绿三色精致微拟物按键**，代码区采用深灰磨砂立体柔光托底，提供长期编程阅读舒适度：
 
