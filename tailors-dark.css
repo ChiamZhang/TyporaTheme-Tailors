@@ -1070,27 +1070,39 @@ body #write .md-diagram-panel marker path {
 }
 
 /* 连线文字底板与边上的注释 (Edge Labels & Annotations) - 深色底板与浅色文字 */
+/* 1. 外层容器 (g, foreignObject, div) 彻底清除多余背景与边框，消除双重外边框嵌套 */
 body #write .md-diagram-panel .edgeLabel,
-body #write .md-diagram-panel .edgeLabel *,
-body #write .md-diagram-panel .edgeLabel span,
 body #write .md-diagram-panel .edgeLabel div,
 body #write .md-diagram-panel .edgeLabel p,
+body #write .md-diagram-panel foreignObject {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* 2. 仅对内层实际文字标签 (span) 应用深色底板与单层微光边框 */
+body #write .md-diagram-panel .edgeLabel span {
+  background-color: #1e293b !important;
+  background: #1e293b !important;
+  color: #f1f5f9 !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 4px !important;
+  padding: 2px 7px !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35) !important;
+  display: inline-block !important;
+}
+
+/* 3. SVG 纯矢量模式兜底 (rect / label-container) */
 body #write .md-diagram-panel .edgeLabel rect,
 body #write .md-diagram-panel .labelBkg,
 body #write .md-diagram-panel .label-container {
-  background-color: #1e293b !important;
-  background: #1e293b !important;
   fill: #1e293b !important;
-  color: #f1f5f9 !important;
-}
-
-body #write .md-diagram-panel .edgeLabel span,
-body #write .md-diagram-panel .edgeLabel div {
-  padding: 2px 8px !important;
-  border-radius: 6px !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35) !important;
-  display: inline-block !important;
+  stroke: rgba(255, 255, 255, 0.14) !important;
+  stroke-width: 1px !important;
+  rx: 4px !important;
+  ry: 4px !important;
 }
 
 /* 时序图与状态图注释块 (Notes) - 深色底板与浅色文字 */
