@@ -479,10 +479,10 @@ content {
   border-radius: 4px;
 }
 
-/* 超链接：清爽晴空蓝，悬停转日落粉 */
+/* 超链接：典雅紫罗兰，悬停转日落粉 */
 #write a {
   position: relative;
-  color: #0284c7;
+  color: #6366f1;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.25s ease;
@@ -500,7 +500,7 @@ content {
   bottom: 0px;
   width: 100%;
   height: 1.5px;
-  background: linear-gradient(90deg, #0284c7, #ec4899);
+  background: linear-gradient(90deg, #6366f1, #ec4899);
   opacity: 0;
   transform: scaleX(0);
   transform-origin: left;
@@ -521,15 +521,14 @@ a.md-header-anchor,
   border: none !important;
 }
 
-/* 删除线 (Strikethrough) - 鲜明醒目的珊瑚红划线，告别模糊不显眼 */
+/* 删除线 (Strikethrough) - 与 Todo List 完成项统一低调沉降风格 */
 #write del,
 #write s,
 #write strike {
-  color: #64748b;
+  color: #64748b !important;
+  opacity: 0.6;
   text-decoration: line-through;
-  text-decoration-color: #f43f5e;
-  text-decoration-thickness: 2px;
-  opacity: 0.85;
+  transition: all 0.25s ease;
 }
 
 /* ==========================================================================
@@ -871,8 +870,11 @@ body #write .task-list-item p::after {
   display: none !important;
 }
 
-body #write .task-list-done {
-  opacity: 0.55;
+body #write .task-list-done,
+body #write .task-list-done *,
+body #write .task-list-item:has(input:checked) {
+  color: #64748b !important;
+  opacity: 0.6;
   text-decoration: line-through;
   transition: all 0.3s ease;
 }
