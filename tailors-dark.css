@@ -946,27 +946,58 @@ body #write .md-image {
   margin: 1.5rem auto;
   display: block;
   text-align: center;
+  width: 100%;
+}
+
+body #write p:has(> .md-image),
+body #write p:has(> img) {
+  text-align: center;
 }
 
 body #write img {
   max-width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 18px -2px rgba(26, 34, 56, 0.08);
+  box-shadow: 0 4px 18px -2px rgba(0, 0, 0, 0.45);
   margin: 0.5rem auto;
+  display: inline-block;
+  vertical-align: middle;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 body #write img:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px -4px rgba(26, 34, 56, 0.14);
+  box-shadow: 0 8px 25px -4px rgba(0, 0, 0, 0.65);
 }
 
 body #write figcaption {
   font-family: var(--font-sans);
   font-size: 0.85rem;
-  color: var(--text-color-muted);
+  color: #94a3b8;
   text-align: center;
   margin-top: 0.5rem;
+}
+
+/* 居中标签 (<center>) 深度排版兼容支持 (文本、图片、胶囊、表格等) */
+center,
+#write center {
+  display: block !important;
+  text-align: center !important;
+  margin: 1.5rem auto !important;
+  width: 100% !important;
+}
+
+center > *,
+#write center > *,
+center img,
+#write center img,
+center .md-image,
+#write center .md-image,
+center var,
+#write center var {
+  display: inline-block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
 }
 
 /* 兼容用户常用的尺寸后缀规范 (alt / title 百分比缩放) */
