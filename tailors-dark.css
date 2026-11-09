@@ -669,30 +669,32 @@ pre.md-fences .CodeMirror-gutters {
 }
 
 /* ==========================================================================
-   引用块 (Blockquote)
+   引用块 (Blockquote) - 暗夜暮光立体浮雕卡片
    ========================================================================== */
 
-/* 引用块：经典 Neumorphism 双阴影浮雕卡片 + 悬停内凹 + 标志性微气泡 */
+/* 引用块：经典 Neumorphism 暗夜浮雕卡片 + 悬停内凹 + 标志性微气泡 */
 body #write blockquote {
   margin: 2rem 0;
   padding: 0.95rem 2.6rem 0.95rem 1.4rem;
   position: relative;
   border-radius: 12px;
-  background: linear-gradient(135deg, #ffffff 0%, #f0f4fa 100%);
-  border-left: 5px solid #8b5cf6;
-  border-top: 1px solid rgba(255, 255, 255, 0.95);
-  box-shadow: 6px 6px 16px rgba(166, 180, 204, 0.3), -6px -6px 16px rgba(255, 255, 255, 0.95);
+  background: linear-gradient(145deg, #182234 0%, #131b28 100%) !important;
+  border-left: 5px solid #f59e0b !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.04) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.5), -2px -2px 8px rgba(255, 255, 255, 0.03) !important;
   font-family: var(--font-serif);
   color: #cbd5e1 !important;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body #write blockquote:hover {
-  background: linear-gradient(135deg, #f5f8fc 0%, #edf2f9 100%);
-  box-shadow: inset 3px 3px 8px rgba(166, 180, 204, 0.28), inset -3px -3px 8px rgba(255, 255, 255, 0.95);
+  background: linear-gradient(145deg, #1c273a 0%, #162030 100%) !important;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.55), inset -2px -2px 6px rgba(255, 255, 255, 0.03) !important;
 }
 
-/* Neumorphism 标志性双圆环装饰气泡 (精巧优雅尺寸，杜绝遮盖正文) */
+/* Neumorphism 标志性双圆环装饰气泡 (暗曜石微立体质感) */
 body #write blockquote::after,
 body #write blockquote::before {
   content: "";
@@ -707,8 +709,9 @@ body #write blockquote::after {
   height: 1.8rem;
   right: -8px;
   bottom: -8px;
-  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
-  box-shadow: 3px 3px 8px rgba(166, 180, 204, 0.3), -3px -3px 8px rgba(255, 255, 255, 0.95);
+  background: linear-gradient(135deg, #243046 0%, #151e2c 100%) !important;
+  box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.5), 1px -1px 3px rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 body #write blockquote::before {
@@ -716,22 +719,24 @@ body #write blockquote::before {
   height: 1rem;
   right: 15px;
   bottom: -4px;
-  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
-  box-shadow: 2px 2px 5px rgba(166, 180, 204, 0.25), -2px -2px 5px rgba(255, 255, 255, 0.95);
+  background: linear-gradient(135deg, #2a3750 0%, #1a2436 100%) !important;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5), 1px -1px 3px rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 body #write blockquote:hover::after,
 body #write blockquote:hover::before {
-  background: var(--primary-gradient);
-  box-shadow: 0 4px 12px rgba(247, 206, 104, 0.35);
+  background: var(--primary-gradient) !important;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.5) !important;
 }
 
 /* 嵌套引用 */
 body #write blockquote blockquote {
   margin: 0.75rem 0;
-  border-left: 3.5px solid #f59e0b;
-  background: rgba(255, 251, 235, 0.7);
-  box-shadow: inset 2px 2px 5px rgba(245, 158, 11, 0.15);
+  border-left: 3.5px solid #ec4899 !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4) !important;
+  color: #cbd5e1 !important;
 }
 
 body #write blockquote blockquote::before,
@@ -740,7 +745,7 @@ body #write blockquote blockquote::after {
 }
 
 /* ==========================================================================
-   表格 (Table)
+   表格 (Table) - 暗曜石渐变斑马纹画板
    ========================================================================== */
 
 body #write .md-table-fig {
@@ -753,55 +758,67 @@ body #write table {
   border-spacing: 0;
   border-radius: 12px;
   overflow: hidden;
-  background: linear-gradient(135deg, #ffffff 0%, #f4f7fb 100%);
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 7px 7px 20px rgba(166, 180, 204, 0.3), -7px -7px 20px rgba(255, 255, 255, 0.95);
+  background: #141c2b !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.55), -2px -2px 8px rgba(255, 255, 255, 0.03) !important;
   transition: all 0.3s ease;
 }
 
 body #write table:hover {
-  box-shadow: 9px 9px 26px rgba(166, 180, 204, 0.36), -9px -9px 26px rgba(255, 255, 255, 1);
+  box-shadow: 8px 8px 26px rgba(0, 0, 0, 0.65), -3px -3px 10px rgba(255, 255, 255, 0.05) !important;
 }
 
 body #write table thead {
-  background: linear-gradient(135deg, #b45309 0%, #be185d 50%, #6d28d9 100%);
+  background: linear-gradient(135deg, #b45309 0%, #be185d 50%, #6d28d9 100%) !important;
   color: #ffffff !important;
   font-weight: 700;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
 }
 
-body #write table th,
+body #write table th {
+  padding: 0.85rem 1.15rem;
+  text-align: left;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
 body #write table td {
   padding: 0.8rem 1.15rem;
   text-align: left;
-  color: #e2e8f0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e2e8f0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.07) !important;
 }
 
 body #write table th:last-child,
 body #write table td:last-child {
-  border-right: none;
+  border-right: none !important;
 }
 
 body #write table tr:last-child td {
-  border-bottom: none;
+  border-bottom: none !important;
 }
 
-/* 斑马纹 */
+/* 斑马纹 (暗夜微交替色) */
 body #write table tbody tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: rgba(255, 255, 255, 0.035) !important;
 }
 
-body #write table tbody tr:hover {
-  background-color: rgba(245, 158, 11, 0.12);
+body #write table tbody tr:nth-child(odd) {
+  background-color: transparent !important;
 }
 
-/* 悬停行微拟物高亮 */
+/* 悬停行微拟物高亮 (琥珀发光色，文字转亮白香槟金) */
 body #write table tbody tr:hover {
-  background-color: #f1f5f9;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 2px 4px rgba(166, 180, 204, 0.15);
+  background-color: rgba(245, 158, 11, 0.15) !important;
+  box-shadow: inset 3px 0 0 #f59e0b !important;
   transition: all 0.2s ease;
+}
+
+body #write table tbody tr:hover td {
+  color: #fef08a !important;
 }
 
 /* ==========================================================================
@@ -960,12 +977,12 @@ body #write img[alt~="90"], body #write img[title~="90"] { width: 90%; }
 body #write img[alt~="100"], body #write img[title~="100"] { width: 100%; }
 
 /* ==========================================================================
-   图表与思维导图 (Mermaid & Diagrams) - 字体继承与新拟态托底
+   图表与思维导图 (Mermaid & Diagrams) - 暗夜全景适配
    ========================================================================== */
 
 body #write pre.md-diagram {
-  background: transparent;
-  box-shadow: none;
+  background: transparent !important;
+  box-shadow: none !important;
   padding: 0;
   text-align: center;
 }
@@ -977,14 +994,14 @@ body #write .md-diagram-panel {
 
 body #write .md-diagram-panel svg {
   border-radius: 12px;
-  background: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  box-shadow: 0 4px 18px -2px rgba(26, 34, 56, 0.05);
+  background: #141c2b !important; /* 彻底去除刺眼纯白，采用暗深色画布底板 */
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.55), -2px -2px 8px rgba(255, 255, 255, 0.03) !important;
   padding: 1.25rem;
   font-family: var(--mermaid-font-family) !important;
 }
 
-/* 强制穿透覆盖 Mermaid 内部所有 SVG/HTML 文本节点，完全继承主题中西文字体体系 */
+/* 强制穿透覆盖 Mermaid 内部所有 SVG/HTML 文本节点，采用明亮浅色 */
 body #write .md-diagram-panel text,
 body #write .md-diagram-panel tspan,
 body #write .md-diagram-panel .label,
@@ -1005,8 +1022,67 @@ body #write .md-diagram-panel foreignObject div,
 body #write .md-diagram-panel foreignObject span,
 body #write .md-diagram-panel foreignObject p {
   font-family: var(--mermaid-font-family) !important;
-  fill: #e2e8f0 !important;
-  color: #e2e8f0 !important;
+  fill: #f1f5f9 !important;
+  color: #f1f5f9 !important;
+}
+
+/* Mermaid 节点图形：深色背景 + 晴空蓝立体边框 (Rect, Circle, Polygon, Path) */
+body #write .md-diagram-panel .node rect,
+body #write .md-diagram-panel .node circle,
+body #write .md-diagram-panel .node ellipse,
+body #write .md-diagram-panel .node polygon,
+body #write .md-diagram-panel .node path,
+body #write .md-diagram-panel .actor rect {
+  fill: #1e293b !important;
+  stroke: #60a5fa !important;
+  stroke-width: 1.5px !important;
+}
+
+/* 决策条件菱形节点高亮 (Amber Orange) */
+body #write .md-diagram-panel .node.rhombus polygon {
+  fill: #221d2e !important;
+  stroke: #f59e0b !important;
+  stroke-width: 1.8px !important;
+}
+
+/* 子图容器与集群框 (Subgraphs / Clusters) */
+body #write .md-diagram-panel .cluster rect {
+  fill: rgba(30, 41, 59, 0.45) !important;
+  stroke: rgba(148, 163, 184, 0.4) !important;
+  stroke-dasharray: 4, 4 !important;
+}
+
+/* 连接线与导轨 (Flowchart & Sequence Edges) */
+body #write .md-diagram-panel .edgePath .path,
+body #write .md-diagram-panel .edge-thickness-normal,
+body #write .md-diagram-panel .flowchart-link,
+body #write .md-diagram-panel .messageLine0,
+body #write .md-diagram-panel .messageLine1 {
+  stroke: #94a3b8 !important;
+  stroke-width: 1.6px !important;
+}
+
+/* 箭头标记 (Arrowheads & Markers) */
+body #write .md-diagram-panel .arrowheadPath,
+body #write .md-diagram-panel marker path {
+  fill: #94a3b8 !important;
+  stroke: #94a3b8 !important;
+}
+
+/* 连线文字底板与背景 (Edge Labels) */
+body #write .md-diagram-panel .edgeLabel {
+  background-color: #141c2b !important;
+  color: #cbd5e1 !important;
+}
+
+body #write .md-diagram-panel .edgeLabel rect {
+  fill: #141c2b !important;
+  opacity: 0.92 !important;
+}
+
+/* 时序图 Lifeline 竖虚线 */
+body #write .md-diagram-panel line {
+  stroke: rgba(148, 163, 184, 0.4) !important;
 }
 
 /* ==========================================================================
