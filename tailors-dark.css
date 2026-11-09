@@ -995,8 +995,8 @@ body #write .md-diagram-panel {
 body #write .md-diagram-panel svg {
   border-radius: 12px;
   background: #141c2b !important; /* 彻底去除刺眼纯白，采用暗深色画布底板 */
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.55), -2px -2px 8px rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 4px 18px -2px rgba(0, 0, 0, 0.4) !important;
   padding: 1.25rem;
   font-family: var(--mermaid-font-family) !important;
 }
@@ -1026,7 +1026,7 @@ body #write .md-diagram-panel foreignObject p {
   color: #f1f5f9 !important;
 }
 
-/* Mermaid 节点图形：深色背景 + 晴空蓝立体边框 (Rect, Circle, Polygon, Path) */
+/* Mermaid 节点图形：深色底色 + 极简低调 1px 细线边框，杜绝刺眼多余边框 */
 body #write .md-diagram-panel .node rect,
 body #write .md-diagram-panel .node circle,
 body #write .md-diagram-panel .node ellipse,
@@ -1034,21 +1034,22 @@ body #write .md-diagram-panel .node polygon,
 body #write .md-diagram-panel .node path,
 body #write .md-diagram-panel .actor rect {
   fill: #1e293b !important;
-  stroke: #60a5fa !important;
-  stroke-width: 1.5px !important;
+  stroke: #334155 !important;
+  stroke-width: 1px !important;
 }
 
-/* 决策条件菱形节点高亮 (Amber Orange) */
+/* 决策条件菱形节点高亮 */
 body #write .md-diagram-panel .node.rhombus polygon {
-  fill: #221d2e !important;
-  stroke: #f59e0b !important;
-  stroke-width: 1.8px !important;
+  fill: #1e293b !important;
+  stroke: #334155 !important;
+  stroke-width: 1px !important;
 }
 
 /* 子图容器与集群框 (Subgraphs / Clusters) */
 body #write .md-diagram-panel .cluster rect {
-  fill: rgba(30, 41, 59, 0.45) !important;
-  stroke: rgba(148, 163, 184, 0.4) !important;
+  fill: rgba(30, 41, 59, 0.3) !important;
+  stroke: #334155 !important;
+  stroke-width: 1px !important;
   stroke-dasharray: 4, 4 !important;
 }
 
@@ -1058,19 +1059,18 @@ body #write .md-diagram-panel .edge-thickness-normal,
 body #write .md-diagram-panel .flowchart-link,
 body #write .md-diagram-panel .messageLine0,
 body #write .md-diagram-panel .messageLine1 {
-  stroke: #94a3b8 !important;
-  stroke-width: 1.6px !important;
+  stroke: #475569 !important;
+  stroke-width: 1.2px !important;
 }
 
 /* 箭头标记 (Arrowheads & Markers) */
 body #write .md-diagram-panel .arrowheadPath,
 body #write .md-diagram-panel marker path {
-  fill: #94a3b8 !important;
-  stroke: #94a3b8 !important;
+  fill: #475569 !important;
+  stroke: #475569 !important;
 }
 
-/* 连线文字底板与边上的注释 (Edge Labels & Annotations) - 深色底板与浅色文字 */
-/* 1. 外层容器 (g, foreignObject, div) 彻底清除多余背景与边框，消除双重外边框嵌套 */
+/* 连线文字底板与边上的注释 (Edge Labels & Annotations) - 深色底色无边框，与画布浑然一体 */
 body #write .md-diagram-panel .edgeLabel,
 body #write .md-diagram-panel .edgeLabel div,
 body #write .md-diagram-panel .edgeLabel p,
@@ -1082,37 +1082,33 @@ body #write .md-diagram-panel foreignObject {
   padding: 0 !important;
 }
 
-/* 2. 仅对内层实际文字标签 (span) 应用深色底板与单层微光边框 */
+/* 连线文本标签：采用与画布相同的暗底以遮挡穿插连线，彻底去除多余边框和阴影 */
 body #write .md-diagram-panel .edgeLabel span {
-  background-color: #1e293b !important;
-  background: #1e293b !important;
-  color: #f1f5f9 !important;
-  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  background-color: #141c2b !important;
+  background: #141c2b !important;
+  color: #cbd5e1 !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 1px 6px !important;
   border-radius: 4px !important;
-  padding: 2px 7px !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35) !important;
   display: inline-block !important;
 }
 
-/* 3. SVG 纯矢量模式兜底 (rect / label-container) */
+/* SVG 矢量模式兜底 */
 body #write .md-diagram-panel .edgeLabel rect,
-body #write .md-diagram-panel .labelBkg,
-body #write .md-diagram-panel .label-container {
-  fill: #1e293b !important;
-  stroke: rgba(255, 255, 255, 0.14) !important;
-  stroke-width: 1px !important;
-  rx: 4px !important;
-  ry: 4px !important;
+body #write .md-diagram-panel .labelBkg {
+  fill: #141c2b !important;
+  stroke: none !important;
 }
 
-/* 时序图与状态图注释块 (Notes) - 深色底板与浅色文字 */
+/* 时序图与状态图注释块 (Notes) */
 body #write .md-diagram-panel .note,
 body #write .md-diagram-panel rect.note,
 body #write .md-diagram-panel path.note,
 body #write .md-diagram-panel polygon.note {
   fill: #1e293b !important;
-  stroke: #f59e0b !important;
-  stroke-width: 1.5px !important;
+  stroke: #475569 !important;
+  stroke-width: 1px !important;
 }
 
 body #write .md-diagram-panel .noteText,
@@ -1124,7 +1120,7 @@ body #write .md-diagram-panel .noteText tspan {
 
 /* 时序图 Lifeline 竖虚线 */
 body #write .md-diagram-panel line {
-  stroke: rgba(148, 163, 184, 0.4) !important;
+  stroke: rgba(148, 163, 184, 0.3) !important;
 }
 
 /* ==========================================================================
