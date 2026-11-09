@@ -530,11 +530,15 @@ a.md-header-anchor,
   border: none !important;
 }
 
-/* 删除线 */
+/* 删除线 (Strikethrough) - 鲜明醒目的暮光粉划线，告别模糊不显眼 */
 #write del,
-#write s {
-  color: var(--text-color-muted);
+#write s,
+#write strike {
+  color: #94a3b8;
   text-decoration: line-through;
+  text-decoration-color: #fb7185;
+  text-decoration-thickness: 2px;
+  opacity: 0.85;
 }
 
 /* ==========================================================================
@@ -649,8 +653,18 @@ pre.md-fences .cm-s-inner .cm-property {
   color: #e2e8f0 !important;  /* 变量/操作符：明亮浅岩白 */
 }
 
-pre.md-fences .cm-s-inner .cm-builtin {
-  color: #ec4899 !important;  /* 内置函数：玫红 */
+/* 类型、内置关键字与常量 (str, f32, bool, String 等) - 明亮晴空青蓝，彻底解决与暗夜底色难以区分的问题 */
+pre.md-fences .cm-s-inner .cm-type,
+pre.md-fences .cm-s-inner .cm-variable-3,
+pre.md-fences .cm-s-inner .cm-atom,
+pre.md-fences .cm-s-inner .cm-builtin,
+pre.md-fences .cm-s-inner .cm-qualifier {
+  color: #38bdf8 !important;  /* 晴空青天蓝，高亮高对比，告别死暗纯蓝 */
+  font-weight: 600 !important;
+}
+
+pre.md-fences .cm-s-inner .cm-variable-2 {
+  color: #a78bfa !important;  /* 生命周期/参数：浅罗兰紫 */
 }
 
 pre.md-fences .cm-s-inner .cm-link {
@@ -1156,13 +1170,13 @@ body #write .md-diagram-panel line {
 }
 
 .md-toc-item {
-  color: #93c5fd; /* 浅天蓝 */
+  color: #bae6fd; /* 更轻盈清透的浅天蓝 (sky-200)，清晰易读 */
   text-decoration: none;
 }
 
 .md-toc-item:hover {
   text-decoration: underline;
-  color: #ec4899;
+  color: #fb7185;
 }
 
 /* 数学公式块 (MathJax) */

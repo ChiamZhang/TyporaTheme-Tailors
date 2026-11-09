@@ -521,11 +521,15 @@ a.md-header-anchor,
   border: none !important;
 }
 
-/* 删除线 */
+/* 删除线 (Strikethrough) - 鲜明醒目的珊瑚红划线，告别模糊不显眼 */
 #write del,
-#write s {
-  color: var(--text-color-muted);
+#write s,
+#write strike {
+  color: #64748b;
   text-decoration: line-through;
+  text-decoration-color: #f43f5e;
+  text-decoration-thickness: 2px;
+  opacity: 0.85;
 }
 
 /* ==========================================================================
@@ -646,8 +650,18 @@ pre.md-fences .cm-s-inner .cm-property {
   color: #334155 !important;  /* 变量/操作符：石墨灰 */
 }
 
-pre.md-fences .cm-s-inner .cm-builtin {
-  color: #ec4899 !important;  /* 内置函数：玫红 */
+/* 类型、内置关键字与常量 (str, f32, bool, String 等) - 清晰海蓝，告别死板深蓝 */
+pre.md-fences .cm-s-inner .cm-type,
+pre.md-fences .cm-s-inner .cm-variable-3,
+pre.md-fences .cm-s-inner .cm-atom,
+pre.md-fences .cm-s-inner .cm-builtin,
+pre.md-fences .cm-s-inner .cm-qualifier {
+  color: #0284c7 !important;
+  font-weight: 600 !important;
+}
+
+pre.md-fences .cm-s-inner .cm-variable-2 {
+  color: #7c3aed !important;  /* 生命周期/参数：优雅紫 */
 }
 
 pre.md-fences .cm-s-inner .cm-link {
@@ -1123,13 +1137,13 @@ body #write .md-diagram-panel line {
 }
 
 .md-toc-item {
-  color: #4f46e5;
+  color: #0284c7;  /* 晴空海蓝，比原先深靛蓝更清透明朗 */
   text-decoration: none;
 }
 
 .md-toc-item:hover {
   text-decoration: underline;
-  color: #ec4899;
+  color: #f43f5e;
 }
 
 /* 数学公式块 (MathJax) */
