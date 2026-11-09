@@ -488,10 +488,10 @@ content {
   border-radius: 4px;
 }
 
-/* 超链接：浅天晴空蓝，悬停转亮粉 */
+/* 超链接：明亮晴空青蓝，悬停转日落粉 */
 #write a {
   position: relative;
-  color: #60a5fa;
+  color: #38bdf8;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.25s ease;
@@ -509,7 +509,7 @@ content {
   bottom: 0px;
   width: 100%;
   height: 1.5px;
-  background: linear-gradient(90deg, #6366f1, #ec4899);
+  background: linear-gradient(90deg, #38bdf8, #f472b6);
   opacity: 0;
   transform: scaleX(0);
   transform-origin: left;
