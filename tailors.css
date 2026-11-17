@@ -1327,6 +1327,11 @@ body.typora-export,
   print-color-adjust: exact !important;
 }
 
+body.typora-export *,
+.typora-export * {
+  box-sizing: border-box !important;
+}
+
 body.typora-export #write,
 .typora-export #write,
 .typora-export-content #write {
@@ -1337,9 +1342,11 @@ body.typora-export #write,
   min-width: 0 !important;
   min-height: 0 !important;
   height: auto !important;
-  margin: 0 !important;
+  margin: 0 auto !important;
   padding: 0 !important; /* 彻底移除 CSS 内边距，完全由 Typora 导出设置统一控制边距 */
   box-sizing: border-box !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
   box-shadow: none !important;
   border: none !important;
   border-radius: 0 !important;
@@ -1393,8 +1400,11 @@ body.typora-export #write hr,
    ========================================================================== */
 
 @media print {
-  @page {
-    size: A4 portrait;
+  /* 全局盒模型：所有元素严格遵守 border-box，确保 padding 不会撑大宽度导致右侧截断 */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box !important;
   }
 
   html,
@@ -1405,7 +1415,7 @@ body.typora-export #write hr,
     font-size: 12pt !important; /* 默认小四号字体 (12pt / 16px) */
     line-height: 1.65 !important;
     color: var(--text-color) !important;
-    width: 100% !important;
+    width: auto !important;
     max-width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
@@ -1436,9 +1446,11 @@ body.typora-export #write hr,
     min-width: 0 !important;
     min-height: 0 !important;
     height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important; /* 彻底去除 CSS 边距，杜绝与 Typora 导出自带边距双重叠加 */
+    margin: 0 auto !important;
+    padding: 0 !important; /* 彻底去除 CSS 边距，由 Typora 导出面板统一控制 */
     box-sizing: border-box !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
     border: none !important;
     box-shadow: none !important;
     border-radius: 0 !important;
@@ -1594,13 +1606,21 @@ body.typora-export #write hr,
     break-inside: avoid;
   }
 
-  /* 独立图片与图表保护 */
+  /* 独立图片与图表保护及防溢出自适应 */
   figure,
   .md-image,
-  img {
+  img,
+  svg,
+  body #write img,
+  body #write .md-image img,
+  body #write .md-diagram-panel,
+  body #write .md-diagram-panel svg {
+    max-width: 100% !important;
+    height: auto !important;
     page-break-inside: avoid;
     break-inside: avoid;
     box-shadow: none !important;
+    box-sizing: border-box !important;
   }
 
   /* 长块内容（代码块、引用块、表格整体）允许自然跨页分页，杜绝因强制整体 avoid 导致第一页底部大面积空缺或第二页大面积空白 */
@@ -1620,22 +1640,47 @@ body.typora-export #write hr,
     margin: 1.5rem 0 !important;
   }
 
-  /* 代码块墨粉节约与边框规范，五号 (10.5pt) 紧凑排版 */
+  /* 代码块防右侧溢出截断：强制自动折行与全宽适应，五号 (10.5pt) 紧凑排版 */
+  pre,
+  pre.md-fences,
+  .md-fences,
+  body #write .md-fences,
+  .CodeMirror,
+  .CodeMirror-scroll,
+  .CodeMirror-sizer,
+  .CodeMirror-lines,
+  .CodeMirror-code,
+  .CodeMirror-line,
+  .CodeMirror-line > span {
+    white-space: pre-wrap !important;
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
   body #write .md-fences {
+    width: 100% !important;
+    max-width: 100% !important;
     font-size: 10.5pt !important;
     line-height: 1.5 !important;
     background: #f8fafc !important;
     border: 1px solid #cbd5e1 !important;
     box-shadow: none !important;
     padding: 0.6rem 0.9rem !important;
+    box-sizing: border-box !important;
   }
 
   body #write .md-fences::before {
     display: none !important;
   }
 
-  /* 引用块导出：经典中性浅灰边框，字号与正文协调 */
+  /* 引用块导出：经典中性浅灰边框，字号与正文协调，防溢出 */
   body #write blockquote {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
     font-size: 11.5pt !important;
     line-height: 1.6 !important;
     background: #f8fafc !important;
@@ -1666,6 +1711,7 @@ body.typora-export #write hr,
     box-shadow: none !important;
     padding: 1px 6px !important;
     border-radius: 4px !important;
+    box-sizing: border-box !important;
   }
 
   body #write code {
@@ -1676,10 +1722,19 @@ body.typora-export #write hr,
     box-shadow: none !important;
     padding: 1px 4px !important;
     border-radius: 3px !important;
+    box-sizing: border-box !important;
   }
 
-  /* 表格导出风格：五号字 (10.5pt) 紧凑清晰 */
+  /* 表格导出风格：自适应宽度、紧凑清晰与单元格换行，杜绝右侧列被截断 */
   body #write table {
+    width: 100% !important;
+    max-width: 100% !important;
+    table-layout: auto !important;
+    border-collapse: collapse !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
     font-size: 10.5pt !important;
     border: 1px solid #cbd5e1 !important;
     box-shadow: none !important;
@@ -1696,6 +1751,9 @@ body.typora-export #write hr,
   body #write table td {
     padding: 0.45rem 0.75rem !important;
     border: 1px solid #cbd5e1 !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    box-sizing: border-box !important;
   }
 
   /* 彻底消除所有超链接在打印时的“蓝色”与“下划线”，恢复纯净文本颜色 */
